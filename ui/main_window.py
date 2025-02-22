@@ -2,18 +2,18 @@
 import sys
 import os
 import shutil
-import json  # Импорт json, так как используется format_additional_info
+import json
 from typing import List, Optional
 
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QPushButton, QLabel, QFileDialog,
-                             QMessageBox, QComboBox, QTextEdit, QScrollArea, QTabWidget, QGroupBox, QLineEdit)
+                             QMessageBox, QComboBox, QTextEdit, QTabWidget, QGroupBox, QLineEdit)
 from PyQt6.QtGui import QPixmap, QShortcut, QKeySequence
 from PyQt6.QtCore import Qt, QSize
 
 from core.mod_info import ModInfo, ModType
-from config.app_config import AppConfig  # Import AppConfig
-from core.mod_manager import ModManager # Import ModManager
+from config.app_config import AppConfig
+from core.mod_manager import ModManager
 from utils.logger import logger
 from ui.event_handlers import NextModHandler, DeleteModHandler, MoveModHandler, MoveModToFolderHandler
 
@@ -21,7 +21,7 @@ from ui.event_handlers import NextModHandler, DeleteModHandler, MoveModHandler, 
 class ModSorterApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Расширенная сортировка модов")
+        self.setWindowTitle("Enhanced Mod Sorter")
         self.setMinimumSize(QSize(AppConfig.WINDOW_MIN_WIDTH, AppConfig.WINDOW_MIN_HEIGHT))
 
         self.mod_manager = None
@@ -54,10 +54,9 @@ class ModSorterApp(QMainWindow):
             logger.warning(f"Config file not found: {config_path}. Using default config.")
             return []
         except json.JSONDecodeError as e:
-            logger.error(f"Error decoding JSON in {config_path}: {e}.  Using default config.")
-            QMessageBox.critical(self, "Ошибка конфигурации", f"Ошибка в файле конфигурации {config_path}: {e}")
-            return [] # Return an empty list on error
-
+            logger.error(f"Error decoding JSON in {config_path}: {e}. Using default config.")
+            QMessageBox.critical(self, "Configuration Error", f"Error in configuration file {config_path}: {e}")
+            return []
 
     def _setup_ui(self):
         logger.debug("Setting up UI")
@@ -76,35 +75,35 @@ class ModSorterApp(QMainWindow):
         self._create_dynamic_buttons()
         self._create_progress_bar()
 
-        self.statusBar().showMessage("Готов к работе")
+        self.statusBar().showMessage("Ready")
 
     def _create_toolbar(self):
         self.toolbar_layout = QHBoxLayout()
 
         # Search
-        self.search_group = QGroupBox("Поиск")
+        self.search_group = QGroupBox("Search")
         search_layout = QHBoxLayout(self.search_group)
         self.search_input = QLineEdit()
-        self.search_input.setPlaceholderText("Поиск по имени мода...")
+        self.search_input.setPlaceholderText("Search by mod name...")
         self.search_input.textChanged.connect(self._filter_mods)
         search_layout.addWidget(self.search_input)
         self.toolbar_layout.addWidget(self.search_group, stretch=2)
 
         # Filter
-        self.filter_group = QGroupBox("Фильтры")
+        self.filter_group = QGroupBox("Filters")
         filter_layout = QHBoxLayout(self.filter_group)
         self.mod_type_filter = QComboBox()
         self.mod_type_filter.addItems([t.value for t in ModType])
         self.mod_type_filter.addItem("All")
         self.mod_type_filter.currentTextChanged.connect(self.filter_mods)
-        filter_layout.addWidget(QLabel("Тип мода:"))
+        filter_layout.addWidget(QLabel("Mod Type:"))
         filter_layout.addWidget(self.mod_type_filter)
         self.toolbar_layout.addWidget(self.filter_group, stretch=1)
 
         self.main_layout.addLayout(self.toolbar_layout)
 
     def _create_file_info_group(self):
-        self.file_info_group = QGroupBox("Текущий файл")
+        self.file_info_group = QGroupBox("Current File")
         file_info_layout = QVBoxLayout(self.file_info_group)
         self.file_name_label = QLabel()
         self.file_name_label.setStyleSheet("font-weight: bold;")
@@ -118,7 +117,7 @@ class ModSorterApp(QMainWindow):
         self.basic_info_widget = QWidget()
         basic_info_layout = QVBoxLayout(self.basic_info_widget)
 
-        self.info_fields_group = QGroupBox("Основная информация")
+        self.info_fields_group = QGroupBox("Basic Information")
         info_fields_layout = QVBoxLayout(self.info_fields_group)
         self.name_label = QLabel()
         self.author_label = QLabel()
@@ -128,7 +127,7 @@ class ModSorterApp(QMainWindow):
             info_fields_layout.addWidget(label)
         basic_info_layout.addWidget(self.info_fields_group)
 
-        self.desc_group = QGroupBox("Описание")
+        self.desc_group = QGroupBox("Description")
         desc_layout = QVBoxLayout(self.desc_group)
         self.desc_text = QTextEdit()
         self.desc_text.setReadOnly(True)
@@ -136,13 +135,13 @@ class ModSorterApp(QMainWindow):
         desc_layout.addWidget(self.desc_text)
         basic_info_layout.addWidget(self.desc_group)
 
-        self.tab_widget.addTab(self.basic_info_widget, "Основная информация")
+        self.tab_widget.addTab(self.basic_info_widget, "Basic Information")
 
         # Images tab
         self.images_widget = QWidget()
         images_layout = QVBoxLayout(self.images_widget)
 
-        self.nav_group = QGroupBox("Навигация")
+        self.nav_group = QGroupBox("Navigation")
         image_nav_layout = QHBoxLayout(self.nav_group)
         self.prev_image_btn = QPushButton("←")
         self.next_image_btn = QPushButton("→")
@@ -154,7 +153,7 @@ class ModSorterApp(QMainWindow):
         images_layout.addWidget(self.nav_group)
         images_layout.addWidget(self.image_name_label)
 
-        self.image_group = QGroupBox("Предпросмотр")
+        self.image_group = QGroupBox("Preview")
         image_group_layout = QVBoxLayout(self.image_group)
         self.image_label = QLabel()
         self.image_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -164,7 +163,7 @@ class ModSorterApp(QMainWindow):
 
         self.prev_image_btn.clicked.connect(self.show_prev_image)
         self.next_image_btn.clicked.connect(self.show_next_image)
-        self.tab_widget.addTab(self.images_widget, "Изображения")
+        self.tab_widget.addTab(self.images_widget, "Images")
 
         # Additional info tab
         self.additional_info_widget = QWidget()
@@ -172,17 +171,17 @@ class ModSorterApp(QMainWindow):
         self.additional_info_text = QTextEdit()
         self.additional_info_text.setReadOnly(True)
         additional_info_layout.addWidget(self.additional_info_text)
-        self.tab_widget.addTab(self.additional_info_widget, "Дополнительно")
+        self.tab_widget.addTab(self.additional_info_widget, "Additional Info")
 
         self.main_layout.addWidget(self.tab_widget)
 
     def _create_action_buttons(self):
-        self.actions_group = QGroupBox("Действия")
+        self.actions_group = QGroupBox("Actions")
         button_layout = QHBoxLayout(self.actions_group)
 
-        self.keep_button = QPushButton("Оставить (Ctrl+K)")
-        self.delete_button = QPushButton("Удалить (Ctrl+D)")
-        self.move_button = QPushButton("Переместить (Ctrl+M)")
+        self.keep_button = QPushButton("Keep (Ctrl+K)")
+        self.delete_button = QPushButton("Delete (Ctrl+D)")
+        self.move_button = QPushButton("Move (Ctrl+M)")
 
         self.keep_button.setStyleSheet("background-color: #4CAF50; color: white;")
         self.delete_button.setStyleSheet("background-color: #f44336; color: white;")
@@ -205,7 +204,7 @@ class ModSorterApp(QMainWindow):
         QWidget.setTabOrder(self.delete_button, self.move_button)
 
     def _create_dynamic_buttons(self):
-        self.dynamic_buttons_group = QGroupBox("Переместить в...")
+        self.dynamic_buttons_group = QGroupBox("Move to...")
         self.dynamic_buttons_layout = QHBoxLayout(self.dynamic_buttons_group)
 
         if not self.move_folders_config:
@@ -227,7 +226,7 @@ class ModSorterApp(QMainWindow):
         self.main_layout.addWidget(self.dynamic_buttons_group)
 
     def _create_progress_bar(self):
-        self.progress_group = QGroupBox("Прогресс")
+        self.progress_group = QGroupBox("Progress")
         progress_layout = QVBoxLayout(self.progress_group)
         self.counter_label = QLabel()
         self.counter_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -236,8 +235,8 @@ class ModSorterApp(QMainWindow):
 
     def _ask_skip_sorted(self):
         msg_box = QMessageBox()
-        msg_box.setWindowTitle("Пропускать отсортированные моды?")
-        msg_box.setText("Хотите ли вы пропускать моды, которые уже были отсортированы?")
+        msg_box.setWindowTitle("Skip Sorted Mods?")
+        msg_box.setText("Do you want to skip mods that have already been sorted?")
         msg_box.setIcon(QMessageBox.Icon.Question)
         msg_box.setStandardButtons(QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No)
         msg_box.setDefaultButton(QMessageBox.StandardButton.No)
@@ -255,7 +254,7 @@ class ModSorterApp(QMainWindow):
         QShortcut(QKeySequence("Right"), self, self.show_next_image)
         logger.info("Keyboard shortcuts setup complete")
 
-    def _handle_error(self, error: Exception, title: str = "Ошибка"):
+    def _handle_error(self, error: Exception, title: str = "Error"):
         logger.error(f"Error: {title} - {error}")
         QMessageBox.critical(self, title, str(error))
 
@@ -273,7 +272,7 @@ class ModSorterApp(QMainWindow):
 
     def update_image_display(self):
         if not self.current_mod_info or not self.current_mod_info.preview_images:
-            self.image_label.setText("Изображения не найдены")
+            self.image_label.setText("No images found")
             self.image_counter_label.setText("0/0")
             self.image_name_label.setText("")
             return
@@ -295,11 +294,11 @@ class ModSorterApp(QMainWindow):
             self.image_counter_label.setText(
                 f"{self.current_image_index + 1}/{len(self.current_mod_info.preview_images)}"
             )
-            self.image_name_label.setText(f"Файл: {image_name}")
+            self.image_name_label.setText(f"File: {image_name}")
             logger.debug(f"Displayed image: {image_name}")
 
         except Exception as e:
-            self._handle_error(e, "Ошибка отображения изображения")
+            self._handle_error(e, "Image display error")
 
     def _filter_mods(self):
         search_text = self.search_input.text().lower()
@@ -324,7 +323,7 @@ class ModSorterApp(QMainWindow):
             current_index += 1
             self.mod_manager.increment_index()
 
-        QMessageBox.information(self, "Поиск", "Моды не найдены!")
+        QMessageBox.information(self, "Search", "No mods found!")
         self.mod_manager.reset_index()
         logger.info("No mods found matching search criteria, resetting index.")
         self.load_current_mod()
@@ -336,17 +335,17 @@ class ModSorterApp(QMainWindow):
             paints = mod_info.additional_info.get('paints', {})
 
             info_parts = [
-                "Конфигурации:",
-                ", ".join(configs) or "Нет",
-                "\nДоступные окраски:",
-                ", ".join(paints.keys()) if paints else "Нет"
+                "Configurations:",
+                ", ".join(configs) or "None",
+                "\nAvailable Paints:",
+                ", ".join(paints.keys()) if paints else "None"
             ]
 
             if 'raw_info' in mod_info.additional_info:
                 raw = mod_info.additional_info['raw_info']
                 if 'Tuning' in raw:
                     info_parts.extend([
-                        "\nДоступный тюнинг:",
+                        "\nAvailable Tuning:",
                         json.dumps(raw['Tuning'], indent=2, ensure_ascii=False)
                     ])
 
@@ -365,10 +364,10 @@ class ModSorterApp(QMainWindow):
                 suitable_for = []  # Treat as empty list if not a list
 
             formatted_info = (
-                f"Точки спавна: {len(info.get('spawn_points', []))}\n"
-                f"Дороги: {', '.join(roads)}\n"
-                f"Подходит для: {', '.join(suitable_for)}\n"
-                f"\nПолная информация:\n"
+                f"Spawn Points: {len(info.get('spawn_points', []))}\n"
+                f"Roads: {', '.join(roads)}\n"
+                f"Suitable for: {', '.join(suitable_for)}\n"
+                f"\nFull Information:\n"
                 f"{json.dumps(info.get('raw_info', {}), indent=2, ensure_ascii=False)}"
             )
             logger.debug(f"Formatted map info: {formatted_info}")
@@ -407,7 +406,7 @@ class ModSorterApp(QMainWindow):
             current_index += 1
             self.mod_manager.increment_index()
             if current_index >= len(zip_files):
-                QMessageBox.information(self, "Фильтр", "Больше нет модов выбранного типа!")
+                QMessageBox.information(self, "Filter", "No more mods of selected type!")
                 self.mod_manager.reset_index()
                 logger.info("No more mods of selected type, resetting index.")
                 break
@@ -421,11 +420,11 @@ class ModSorterApp(QMainWindow):
 
     def select_source_folder(self):
         source_folder = QFileDialog.getExistingDirectory(
-            self, "Выберите папку с архивами модов"
+            self, "Select the directory with mod archives"
         )
 
         if not source_folder:
-            QMessageBox.critical(self, "Ошибка", "Папка не выбрана")
+            QMessageBox.critical(self, "Error", "Directory not selected")
             logger.warning("No source folder selected.")
             return None
 
@@ -438,7 +437,7 @@ class ModSorterApp(QMainWindow):
             return
 
          if self.mod_manager.get_current_index() >= self.mod_manager.get_zip_files_count():
-            QMessageBox.information(self, "Завершено", "Все файлы просмотрены!")
+            QMessageBox.information(self, "Complete", "All files have been viewed!")
             logger.info("All files processed, exiting.")
             sys.exit()
 
@@ -460,17 +459,17 @@ class ModSorterApp(QMainWindow):
          self.current_mod_info = self.mod_manager.get_current_mod_info()
          if not self.current_mod_info:
             logger.warning(f"Could not load mod info for {file_name}")
-            self.current_mod_info = ModInfo(name="Ошибка", author="Неизвестно", type=ModType.OTHER, description="Не удалось загрузить информацию о моде", preview_images=[], additional_info={})
+            self.current_mod_info = ModInfo(name="Error", author="Unknown", type=ModType.OTHER, description="Failed to load mod information", preview_images=[], additional_info={})
 
          # Update UI elements with mod info
          if is_sorted:
-            self.file_name_label.setText(f"Файл: <span style='color: green;'>{file_name} (Отсортирован)</span>")
+            self.file_name_label.setText(f"File: <span style='color: green;'>{file_name} (Sorted)</span>")
          else:
-            self.file_name_label.setText(f"Файл: {file_name}")
+            self.file_name_label.setText(f"File: {file_name}")
 
-         self.name_label.setText(f"Имя: {self.current_mod_info.name}")
-         self.author_label.setText(f"Автор: {self.current_mod_info.author}")
-         self.type_label.setText(f"Тип: {self.current_mod_info.type.value}")
+         self.name_label.setText(f"Name: {self.current_mod_info.name}")
+         self.author_label.setText(f"Author: {self.current_mod_info.author}")
+         self.type_label.setText(f"Type: {self.current_mod_info.type.value}")
          self.desc_text.setText(self.current_mod_info.description)
          self.additional_info_text.setText(self.format_additional_info(self.current_mod_info))
 
@@ -480,7 +479,7 @@ class ModSorterApp(QMainWindow):
          # Update counter
          current_index = self.mod_manager.get_current_index()
          zip_files_count = self.mod_manager.get_zip_files_count()
-         self.counter_label.setText(f"Мод {current_index + 1} из {zip_files_count}")
+         self.counter_label.setText(f"Mod {current_index + 1} of {zip_files_count}")
 
     def next_mod_clicked(self):
         handler = NextModHandler(self, self.mod_manager, self.current_mod_info)
