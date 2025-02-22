@@ -14,7 +14,7 @@ This application helps you sort your BeamNG.drive mods more efficiently. It anal
 
 **Installation:**
 
-1.  **Download:** Download the latest executable (`.exe`) from the [Releases](https://github.com/Bongo94/BeamNG_sort/releases/tag/Releases) page.
+1.  **Download:** Download the latest executable (`.exe`) from the [Releases](https://github.com/Bongo94/BeamNG_sort/releases) page.
 2.  **Run:** Execute the downloaded `.exe` file.
 
 **Usage:**
@@ -121,7 +121,7 @@ PyQt6
 
 **Установка:**
 
-1.  **Скачать:** Скачайте последнюю версию исполняемого файла (`.exe`) со страницы [Releases](https://github.com/Bongo94/BeamNG_sort/releases/tag/Releases).
+1.  **Скачать:** Скачайте последнюю версию исполняемого файла (`.exe`) со страницы [Releases](https://github.com/Bongo94/BeamNG_sort/releases).
 2.  **Запустить:** Запустите скачанный `.exe` файл.
 
 **Использование:**
