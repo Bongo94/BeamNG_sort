@@ -53,7 +53,7 @@ def _delete_sorted_marker(zip_file_path: str) -> None:
         logger.exception(f"Error removing .mod_sorted from {zip_file_path}: {e}")
 
 
-def _check_sorted_marker(zip_file_path: str) -> bool:
+def check_sorted_marker(zip_file_path: str) -> bool:
     """Checks if a .mod_sorted marker exists *inside* the ZIP."""
     logger.debug(f"Checking for sorted marker in: {zip_file_path}")
     try:
@@ -113,11 +113,12 @@ class ModManager:
             logger.error(f"Error analyzing {zip_file_path}: {e}")
             return None
 
-    def mark_as_sorted(self, zip_file_path: str, mod_info: ModInfo) -> None:
+    @staticmethod
+    def mark_as_sorted(zip_file_path: str, mod_info: ModInfo) -> None:
         """Marks a mod as sorted by adding a .mod_sorted file *inside* the ZIP."""
         logger.debug(f"Marking as sorted: {zip_file_path}")
         try:
-            if _check_sorted_marker(zip_file_path):  # Add this check
+            if check_sorted_marker(zip_file_path):  # Add this check
                 logger.info(f"{zip_file_path} is already marked as sorted.")
                 return  # Exit if already sorted
 
@@ -139,7 +140,8 @@ class ModManager:
             raise RuntimeError(f"Failed to create marker file inside ZIP: {e}")
 
 
-    def _check_sorted_marker(self, zip_file_path: str) -> bool:
+    @staticmethod
+    def _check_sorted_marker(zip_file_path: str) -> bool:
         """Checks if a .mod_sorted marker exists *inside* the ZIP."""
         logger.debug(f"Checking for sorted marker in: {zip_file_path}")
         try:

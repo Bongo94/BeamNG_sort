@@ -27,7 +27,7 @@ class NextModHandler(EventHandler):
             self.mod_manager.increment_index()
             self.main_window.load_current_mod()
         except Exception as e:
-            self.main_window._handle_error(e, "Ошибка при переходе к следующему моду")
+            self.main_window.handle_error(e, "Ошибка при переходе к следующему моду")
 
 
 class DeleteModHandler(EventHandler):
@@ -48,7 +48,7 @@ class DeleteModHandler(EventHandler):
             QMessageBox.information(self.main_window, "Успех", f"Файл {file_name} удален")
             self.main_window.load_current_mod()  # Refresh UI
         except Exception as e:
-            self.main_window._handle_error(e, "Ошибка при удалении мода")
+            self.main_window.handle_error(e, "Ошибка при удалении мода")
 
 
 class MoveModHandler(EventHandler):
@@ -75,7 +75,7 @@ class MoveModHandler(EventHandler):
             QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {type_folder}")
             self.main_window.load_current_mod()  # Refresh UI
         except Exception as e:
-            self.main_window._handle_error(e, "Ошибка при перемещении мода")
+            self.main_window.handle_error(e, "Ошибка при перемещении мода")
 
 class MoveModToFolderHandler(EventHandler):
     def __init__(self, main_window, mod_manager, folder_path):
@@ -95,4 +95,4 @@ class MoveModToFolderHandler(EventHandler):
             QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {self.folder_path}")
             self.main_window.load_current_mod()
         except Exception as e:
-            self.main_window._handle_error(e, f"Ошибка при перемещении мода в {self.folder_path}")
+            self.main_window.handle_error(e, f"Ошибка при перемещении мода в {self.folder_path}")

@@ -1,27 +1,24 @@
 # mod_sorter/ui/main_window.py
-import sys
-import os
-import shutil
 import json
-from typing import List, Optional
+import sys
 
+from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtGui import QPixmap, QShortcut, QKeySequence
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QPushButton, QLabel, QFileDialog,
                              QMessageBox, QComboBox, QTextEdit, QTabWidget, QGroupBox, QLineEdit)
-from PyQt6.QtGui import QPixmap, QShortcut, QKeySequence
-from PyQt6.QtCore import Qt, QSize
 
-from core.mod_info import ModInfo, ModType
 from config.app_config import AppConfig
-from core.mod_manager import ModManager
-from utils.logger import logger
+from core.mod_info import ModInfo, ModType
+from core.mod_manager import ModManager, check_sorted_marker
 from ui.event_handlers import NextModHandler, DeleteModHandler, MoveModHandler, MoveModToFolderHandler
+from utils.logger import logger
 
 
 class ModSorterApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Enhanced Mod Sorter")
+        self.setWindowTitle("BeamNG Mod Sorter")
         self.setMinimumSize(QSize(AppConfig.WINDOW_MIN_WIDTH, AppConfig.WINDOW_MIN_HEIGHT))
 
         self.mod_manager = None
@@ -254,7 +251,7 @@ class ModSorterApp(QMainWindow):
         QShortcut(QKeySequence("Right"), self, self.show_next_image)
         logger.info("Keyboard shortcuts setup complete")
 
-    def _handle_error(self, error: Exception, title: str = "Error"):
+    def handle_error(self, error: Exception, title: str = "Error"):
         logger.error(f"Error: {title} - {error}")
         QMessageBox.critical(self, title, str(error))
 
@@ -298,7 +295,7 @@ class ModSorterApp(QMainWindow):
             logger.debug(f"Displayed image: {image_name}")
 
         except Exception as e:
-            self._handle_error(e, "Image display error")
+            self.handle_error(e, "Image display error")
 
     def _filter_mods(self):
         search_text = self.search_input.text().lower()
@@ -328,7 +325,8 @@ class ModSorterApp(QMainWindow):
         logger.info("No mods found matching search criteria, resetting index.")
         self.load_current_mod()
 
-    def format_additional_info(self, mod_info: ModInfo) -> str:
+    @staticmethod
+    def format_additional_info(mod_info: ModInfo) -> str:
         logger.debug(f"Formatting additional info for mod type: {mod_info.type}")
         if mod_info.type == ModType.VEHICLE:
             configs = mod_info.additional_info.get('configurations', [])
@@ -448,7 +446,7 @@ class ModSorterApp(QMainWindow):
             logger.warning("No current file path or name, cannot load mod.")
             return
 
-         is_sorted = self.mod_manager._check_sorted_marker(current_file_path)
+         is_sorted = check_sorted_marker(current_file_path)
          if is_sorted and self.skip_sorted:
             logger.info(f"Skipping sorted mod: {file_name}")
             self.mod_manager.increment_index()

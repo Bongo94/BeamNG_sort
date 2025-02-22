@@ -5,6 +5,7 @@ import os
 from typing import Optional, List, Dict
 from core.mod_info import ModInfo, ModType  # Импорт из mod_info.py
 from utils.logger import logger  # Импортируем логгер
+import re  # Import the regular expression module
 
 class ModAnalyzer:
     @staticmethod
@@ -47,17 +48,33 @@ class ModAnalyzer:
             return None
 
         logger.debug(f"Found vehicle info.json: {info_file}")
+
         try:
             with zf.open(info_file) as f:
-                info = json.load(f)
-        except json.JSONDecodeError as e:
-            logger.warning(f"JSONDecodeError in _check_vehicle_mod: {e}")
-            return ModAnalyzer._create_fallback_mod_info(zf, info_file, ModType.VEHICLE, str(e))
+                file_content = f.read().decode('utf-8', 'ignore')  # Read as string and handle encoding issues
+            # Extract relevant info using regex (safer than direct JSON parsing)
+            name = ModAnalyzer._extract_value_from_json_string(file_content, 'Name')
+            author = ModAnalyzer._extract_value_from_json_string(file_content, 'Author')
+            country = ModAnalyzer._extract_value_from_json_string(file_content, 'Country')
+            derby_class = ModAnalyzer._extract_value_from_json_string(file_content, 'Derby Class')
+            mod_type = ModAnalyzer._extract_value_from_json_string(file_content, 'Type')
+
+            engine_type = ModAnalyzer._extract_value_from_json_string(file_content, 'Type', section='Engine')
+            engine_configuration = ModAnalyzer._extract_value_from_json_string(file_content, 'Configuration', section='Engine')
+            engine_displacement = ModAnalyzer._extract_value_from_json_string(file_content, 'Displacement', section='Engine')
+            engine_power = ModAnalyzer._extract_value_from_json_string(file_content, 'Power', section='Engine')
+
+            transmission_type = ModAnalyzer._extract_value_from_json_string(file_content, 'Type', section='Transmission')
+            transmission_gears = ModAnalyzer._extract_value_from_json_string(file_content, 'Gears', section='Transmission')
+            years_min = ModAnalyzer._extract_value_from_json_string(file_content, 'min', section='Years')
+            years_max = ModAnalyzer._extract_value_from_json_string(file_content, 'max', section='Years')
+            brand = ModAnalyzer._extract_value_from_json_string(file_content, 'Brand')
+            body_style = ModAnalyzer._extract_value_from_json_string(file_content, 'Body Style')
+
+
         except Exception as e:
             logger.exception(f"Error in _check_vehicle_mod")
             return ModAnalyzer._create_fallback_mod_info(zf, info_file, ModType.VEHICLE, str(e))
-
-        logger.debug(f"Vehicle info: {info}")
 
         # Get all preview images and configurations
         preview_images = []
@@ -100,22 +117,115 @@ class ModAnalyzer:
 
 
         mod_info = ModInfo(
-            name=info.get('Name', 'Unknown'),
-            author=info.get('Author', 'Unknown'),
+            name=name or 'Unknown',
+            author=author or 'Unknown',
             type=ModType.VEHICLE,
-            description=ModAnalyzer._format_vehicle_description(info),
+            description=ModAnalyzer._format_vehicle_description_from_values(
+                brand=brand,
+                body_style=body_style,
+                years_min=years_min,
+                years_max=years_max,
+                country=country,
+                derby_class=derby_class,
+                mod_type=mod_type,
+                engine_type=engine_type,
+                engine_configuration=engine_configuration,
+                engine_displacement=engine_displacement,
+                engine_power=engine_power,
+                transmission_type=transmission_type,
+                transmission_gears=transmission_gears
+            ),
             preview_images=preview_images,
             additional_info={
-                'country': info.get('Country'),
-                'derby_class': info.get('Derby Class'),
-                'type': info.get('Type'),
-                'paints': info.get('paints', {}),
+                'country': country,
+                'derby_class': derby_class,
+                'type': mod_type,
                 'configurations': [os.path.splitext(os.path.basename(pc))[0] for pc in pc_files],
-                'raw_info': info
+                'raw_info': {'Name':name, 'Author': author, 'Country': country, 'Derby Class': derby_class, 'Type': mod_type}
             }
         )
-        logger.info(f"Vehicle mod detected: {mod_info.name}")
+        logger.info(f"Vehicle mod detected: {mod_info.name}".encode('utf-8').decode('ascii', errors='ignore'))
         return mod_info
+
+    @staticmethod
+    def _extract_value_from_json_string(json_string: str, key: str, section: str = None) -> Optional[str]:
+        """
+        Extracts a value from a JSON-like string using regular expressions.
+
+        Args:
+            json_string: The JSON-like string to extract from.
+            key: The key to extract the value for.
+            section: If the key is inside a nested section (e.g., "Engine"), specify the section name.
+
+        Returns:
+            The extracted value as a string, or None if not found.
+        """
+        try:
+            if section:
+                 pattern = re.compile(rf'"{section}"\s*:\s*{{.*??"{key}"\s*:\s*"([^"]*?)"', re.DOTALL | re.IGNORECASE)
+            else:
+                pattern = re.compile(rf'"{key}"\s*:\s*"([^"]*?)"', re.IGNORECASE)
+
+            match = pattern.search(json_string)
+            if match:
+                return match.group(1)
+            else:
+                return None
+        except Exception as e:
+            logger.warning(f"Error extracting value for key '{key}' in section '{section}': {e}")
+            return None
+
+
+    @staticmethod
+    def _format_vehicle_description_from_values(brand: str, body_style: str, years_min: str, years_max: str,
+                                            country: str, derby_class: str, mod_type: str, engine_type: str,
+                                            engine_configuration: str, engine_displacement: str, engine_power: str,
+                                            transmission_type: str, transmission_gears: str) -> str:
+        desc_parts = []
+
+        def add_if_present(label: str, value: str):
+            if value:  # Check if value is not None or empty
+                desc_parts.append(f"{label}: {value}")
+            else:
+                desc_parts.append(f"{label}: N/A")
+
+        add_if_present("Brand", brand)
+        add_if_present("Body Style", body_style)
+        add_if_present("Years", f"{years_min}-{years_max}" if years_min and years_max else years_min or years_max) # Handle single year
+        add_if_present("Country", country)
+        add_if_present("Derby Class", derby_class)
+        add_if_present("Type", mod_type)
+
+        engine_details = []
+        def add_if_present_local(label, value):
+             if value:  # Check if value is not None or empty
+                engine_details.append(f"{label}: {value}")
+
+        if engine_type or engine_configuration or engine_displacement or engine_power:  # Check if any engine detail is present
+            desc_parts.append("\nEngine Details:")
+            add_if_present_local("Type", engine_type)
+            add_if_present_local("Configuration", engine_configuration)
+            add_if_present_local("Displacement", engine_displacement)
+            add_if_present_local("Power", engine_power)
+            desc_parts.extend(engine_details)
+            if not engine_details:
+                desc_parts.append("N/A")
+
+
+        trans_details = []
+        def add_if_present_local(label, value):
+             if value:  # Check if value is not None or empty
+                trans_details.append(f"{label}: {value}")
+        if transmission_type or transmission_gears:
+            desc_parts.append("\nTransmission:")
+            add_if_present_local("Type", transmission_type)
+            add_if_present_local("Gears", transmission_gears)
+            desc_parts.extend(trans_details)
+            if not trans_details:
+                desc_parts.append("N/A")
+
+
+        return "\n".join(desc_parts)
 
     @staticmethod
     def _format_vehicle_description(info: Dict) -> str:
@@ -165,47 +275,103 @@ class ModAnalyzer:
             return None
 
         logger.debug(f"Found map info.json: {info_file}")
+
         try:
             with zf.open(info_file) as f:
-                info = json.load(f)
-        except json.JSONDecodeError as e:
-            logger.warning(f"JSONDecodeError in _check_map_mod: {e}")
-            return ModAnalyzer._create_fallback_mod_info(zf, info_file, ModType.MAP, str(e))
+                file_content = f.read().decode('utf-8', 'ignore')  # Read as string and handle encoding issues
+
+            # Extract relevant info using regex
+            title = ModAnalyzer._extract_value_from_json_string(file_content, 'title')
+            authors = ModAnalyzer._extract_value_from_json_string(file_content, 'authors')
+            biome = ModAnalyzer._extract_value_from_json_string(file_content, 'biome')
+            description = ModAnalyzer._extract_value_from_json_string(file_content, 'description')
+            roads_str = ModAnalyzer._extract_value_from_json_string(file_content, 'roads')
+            suitablefor_str = ModAnalyzer._extract_value_from_json_string(file_content, 'suitablefor')
+
+            # Convert roads and suitablefor strings to lists if needed
+            roads = [s.strip() for s in roads_str.split(',')] if roads_str else []
+            suitablefor = [s.strip() for s in suitablefor_str.split(',')] if suitablefor_str else []
+
+            size_x = ModAnalyzer._extract_value_from_json_string(file_content, '0', section='size')
+            size_y = ModAnalyzer._extract_value_from_json_string(file_content, '1', section='size')
+
+            # Convert to strings, defaulting to "N/A" if None
+            size_x = size_x if size_x else "N/A"
+            size_y = size_y if size_y else "N/A"
+
+            size = [size_x, size_y]
+            # Extract preview image filenames
+            previews_str = ModAnalyzer._extract_value_from_json_string(file_content, 'previews')
+
+            # Handle the case where previews is a list
+            previews = []
+            if previews_str:
+                # Basic attempt to parse a JSON list, but not relying on full JSON parsing
+                previews = [s.strip().replace('"', '') for s in previews_str.strip('[]').split(',')]
+
+
         except Exception as e:
             logger.exception(f"Error in _check_map_mod")
             return ModAnalyzer._create_fallback_mod_info(zf, info_file, ModType.MAP, str(e))
 
-        logger.debug(f"Map info: {info}")
         preview_images = []
         base_dir = os.path.dirname(info_file)
 
         # Get all preview images with their names
-        for preview in info.get('previews', []):
-            preview_path = os.path.join(base_dir, preview)
-            if preview_path in file_list:
-                try:
-                    with zf.open(preview_path) as img:
-                        preview_images.append((os.path.basename(preview), img.read()))
-                        logger.debug(f"Found map preview image: {preview_path}")
-                except Exception as e:
-                    logger.warning(f"Could not load preview image {preview_path}: {e}")
+        if previews:
+            for preview in previews:
+                preview_path = os.path.join(base_dir, preview)
+                if preview_path in file_list:
+                    try:
+                        with zf.open(preview_path) as img:
+                            preview_images.append((os.path.basename(preview), img.read()))
+                            logger.debug(f"Found map preview image: {preview_path}")
+                    except Exception as e:
+                        logger.warning(f"Could not load preview image {preview_path}: {e}")
 
         mod_info = ModInfo(
-            name=info.get('title', 'Unknown Map'),
-            author=info.get('authors', 'Unknown'),
+            name=title or 'Unknown Map',
+            author=authors or 'Unknown',
             type=ModType.MAP,
-            description=ModAnalyzer._format_map_description(info),
+            description=ModAnalyzer._format_map_description_from_values(
+                biome=biome,
+                size=size,
+                description=description,
+                roads=roads,
+                suitablefor=suitablefor
+            ),
             preview_images=preview_images,
             additional_info={
-                'roads': info.get('roads'),
-                'suitable_for': info.get('suitablefor'),
-                'spawn_points': info.get('spawnPoints', []),
-                'raw_info': info
+                'roads': roads,
+                'suitable_for': suitablefor,
+                'spawn_points': [],  # Placeholder
+                'raw_info': {'title': title, 'authors': authors, 'biome': biome, 'description': description,
+                             'roads': roads, 'suitablefor': suitablefor}
             }
         )
 
-        logger.info(f"Map mod detected: {mod_info.name}")
+        logger.info(f"Map mod detected: {mod_info.name}".encode('utf-8').decode('ascii', errors='ignore'))
         return mod_info
+
+    @staticmethod
+    def _format_map_description_from_values(biome: str, size: List[str], description: str, roads: List[str],
+                                            suitablefor: List[str]) -> str:
+        """Formats the map description from extracted values."""
+        desc_parts = []
+
+        def add_if_present(label: str, value: str):
+            if value:  # Check if value is not None or empty
+                desc_parts.append(f"{label}: {value}")
+            else:
+                desc_parts.append(f"{label}: N/A")
+
+        add_if_present("Biome", biome)
+        add_if_present("Size", ' x '.join(size) if size else 'N/A')
+        add_if_present("\nDescription", description)
+        add_if_present("\nRoads", ', '.join(roads) if roads else 'N/A')
+        add_if_present("Suitable for", ', '.join(suitablefor) if suitablefor else 'N/A')
+
+        return "\n".join(desc_parts)
 
     @staticmethod
     def _format_map_description(info: Dict) -> str:
@@ -262,7 +428,7 @@ class ModAnalyzer:
             additional_info=info
         )
 
-        logger.info(f"Created 'other' mod info: {mod_info.name}")
+        logger.info(f"Created 'other' mod info: {mod_info.name}".encode('utf-8').decode('ascii', errors='ignore'))
         return mod_info
 
     @staticmethod
@@ -319,5 +485,5 @@ class ModAnalyzer:
             preview_images=preview_images,
             additional_info={}  # No additional info if JSON is broken
         )
-        logger.info(f"Created fallback mod info: {mod_info.name}")
+        logger.info(f"Created fallback mod info: {mod_info.name}".encode('utf-8').decode('ascii', errors='ignore'))
         return mod_info
