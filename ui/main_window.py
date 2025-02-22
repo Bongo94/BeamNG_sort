@@ -430,54 +430,70 @@ class ModSorterApp(QMainWindow):
         return source_folder
 
     def load_current_mod(self):
-         if not self.mod_manager:
+        if not self.mod_manager:
             logger.warning("ModManager not initialized, cannot load mod.")
             return
 
-         if self.mod_manager.get_current_index() >= self.mod_manager.get_zip_files_count():
+        zip_files_count = self.mod_manager.get_zip_files_count()
+        if self.mod_manager.get_current_index() >= zip_files_count:
             QMessageBox.information(self, "Complete", "All files have been viewed!")
             logger.info("All files processed, exiting.")
-            sys.exit()
+            self.clear_ui()
+            return
+            # sys.exit() #если раскомментировать - приложение закроется
 
-         current_file_path = self.mod_manager.get_current_zip_file_path()
-         file_name = self.mod_manager.get_current_zip_file_name()
+        current_file_path = self.mod_manager.get_current_zip_file_path()
+        file_name = self.mod_manager.get_current_zip_file_name()
 
-         if not current_file_path or not file_name:
+        if not current_file_path or not file_name:
             logger.warning("No current file path or name, cannot load mod.")
+            self.clear_ui()  # clear UI
             return
 
-         is_sorted = check_sorted_marker(current_file_path)
-         if is_sorted and self.skip_sorted:
+        is_sorted = check_sorted_marker(current_file_path)
+        if is_sorted and self.skip_sorted:
             logger.info(f"Skipping sorted mod: {file_name}")
             self.mod_manager.increment_index()
             self.load_current_mod()
             return
 
-         # Get mod info from ModManager
-         self.current_mod_info = self.mod_manager.get_current_mod_info()
-         if not self.current_mod_info:
+        # Get mod info from ModManager
+        self.current_mod_info = self.mod_manager.get_current_mod_info()
+        if not self.current_mod_info:
             logger.warning(f"Could not load mod info for {file_name}")
-            self.current_mod_info = ModInfo(name="Error", author="Unknown", type=ModType.OTHER, description="Failed to load mod information", preview_images=[], additional_info={})
+            self.current_mod_info = ModInfo(name="Error", author="Unknown", type=ModType.OTHER,
+                                            description="Failed to load mod information", preview_images=[],
+                                            additional_info={})
 
-         # Update UI elements with mod info
-         if is_sorted:
+        # Update UI elements with mod info
+        if is_sorted:
             self.file_name_label.setText(f"File: <span style='color: green;'>{file_name} (Sorted)</span>")
-         else:
+        else:
             self.file_name_label.setText(f"File: {file_name}")
 
-         self.name_label.setText(f"Name: {self.current_mod_info.name}")
-         self.author_label.setText(f"Author: {self.current_mod_info.author}")
-         self.type_label.setText(f"Type: {self.current_mod_info.type.value}")
-         self.desc_text.setText(self.current_mod_info.description)
-         self.additional_info_text.setText(self.format_additional_info(self.current_mod_info))
+        self.name_label.setText(f"Name: {self.current_mod_info.name}")
+        self.author_label.setText(f"Author: {self.current_mod_info.author}")
+        self.type_label.setText(f"Type: {self.current_mod_info.type.value}")
+        self.desc_text.setText(self.current_mod_info.description)
+        self.additional_info_text.setText(self.format_additional_info(self.current_mod_info))
 
-         self.current_image_index = 0
-         self.update_image_display()
+        self.current_image_index = 0
+        self.update_image_display()
 
-         # Update counter
-         current_index = self.mod_manager.get_current_index()
-         zip_files_count = self.mod_manager.get_zip_files_count()
-         self.counter_label.setText(f"Mod {current_index + 1} of {zip_files_count}")
+        # Update counter
+        current_index = self.mod_manager.get_current_index()
+        self.counter_label.setText(f"Mod {current_index + 1} of {zip_files_count}")
+
+
+    def clear_ui(self):
+        self.file_name_label.setText(f"File: No file")
+        self.name_label.setText(f"Name: No name")
+        self.author_label.setText(f"Author: No author")
+        self.type_label.setText(f"Type: No type")
+        self.desc_text.setText("No description")
+        self.additional_info_text.setText("No additional info")
+        self.image_label.clear()
+        self.image_counter_label.setText("0/0")
 
     def next_mod_clicked(self):
         handler = NextModHandler(self, self.mod_manager, self.current_mod_info)

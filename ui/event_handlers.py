@@ -70,9 +70,9 @@ class MoveModHandler(EventHandler):
             return
 
         try:
-            type_folder = os.path.join(dest_folder, self.current_mod_info.type.value)
-            self.mod_manager.move_mod(current_file_path, type_folder)
-            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {type_folder}")
+            # type_folder = os.path.join(dest_folder, self.current_mod_info.type.value) #удаляем строку
+            self.mod_manager.move_mod(current_file_path, dest_folder) #меняем type_folder на dest_folder
+            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {dest_folder}")
             self.main_window.load_current_mod()  # Refresh UI
         except Exception as e:
             self.main_window.handle_error(e, "Ошибка при перемещении мода")
@@ -91,8 +91,10 @@ class MoveModToFolderHandler(EventHandler):
             return
 
         try:
-            self.mod_manager.move_mod(current_file_path, self.folder_path)
-            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {self.folder_path}")
+            #Определяем путь к папке относительно source_folder
+            destination_path = os.path.join(self.main_window.source_folder, self.folder_path)
+            self.mod_manager.move_mod(current_file_path, destination_path)
+            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {destination_path}")
             self.main_window.load_current_mod()
         except Exception as e:
             self.main_window.handle_error(e, f"Ошибка при перемещении мода в {self.folder_path}")

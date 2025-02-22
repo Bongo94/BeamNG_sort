@@ -65,19 +65,6 @@ def check_sorted_marker(zip_file_path: str) -> bool:
         logger.warning(f"Error checking for sorted marker in {zip_file_path}: {e}")
         return False  # Assume not sorted if there's an error
 
-
-def move_mod(zip_file_path: str, destination_path: str) -> None:
-    """Moves a mod to the specified directory."""
-    logger.debug(f"Moving {zip_file_path} to {destination_path}")
-    try:
-        os.makedirs(destination_path, exist_ok=True)
-        shutil.move(zip_file_path, destination_path)
-        logger.info(f"Moved {zip_file_path} to {destination_path}")
-    except Exception as e:
-        logger.exception(f"Failed to move {zip_file_path} to {destination_path}: {e}")
-        raise  # Re-raise the exception for the UI to handle
-
-
 class ModManager:
     """Business logic for mod management"""
 
@@ -113,32 +100,32 @@ class ModManager:
             logger.error(f"Error analyzing {zip_file_path}: {e}")
             return None
 
-    @staticmethod
-    def mark_as_sorted(zip_file_path: str, mod_info: ModInfo) -> None:
-        """Marks a mod as sorted by adding a .mod_sorted file *inside* the ZIP."""
-        logger.debug(f"Marking as sorted: {zip_file_path}")
+    def move_mod(self, zip_file_path: str, destination_path: str) -> None:
+        """Moves a mod to the specified directory."""
+        logger.debug(f"Moving {zip_file_path} to {destination_path}")
         try:
-            if check_sorted_marker(zip_file_path):  # Add this check
-                logger.info(f"{zip_file_path} is already marked as sorted.")
-                return  # Exit if already sorted
+            os.makedirs(destination_path, exist_ok=True)
+            shutil.move(zip_file_path, destination_path)
+            logger.info(f"Moved {zip_file_path} to {destination_path}")
 
-            with zipfile.ZipFile(zip_file_path, 'a') as zf:
-                # Convert ModInfo to a dictionary, handling ModType
-                mod_info_dict = {
-                    'name': mod_info.name,
-                    'author': mod_info.author,
-                    'type': mod_info.type.value,  # Store the value of the enum
-                    'description': mod_info.description,
-                    # You *could* store preview image names, but not the image data itself
-                    'additional_info': mod_info.additional_info
-                }
-                marker_data = json.dumps(mod_info_dict, indent=4).encode('utf-8')
-                zf.writestr('.mod_sorted', marker_data, compress_type=zipfile.ZIP_DEFLATED)
-            logger.info(f"Successfully marked {zip_file_path} as sorted.")
+            # Обновляем список файлов и корректируем индекс
+            moved_file_name = os.path.basename(zip_file_path)
+            self.zip_files = self._load_zip_files()
+
+            # Поиск индекса перемещенного файла в новом списке
+            try:
+                new_index = self.zip_files.index(moved_file_name)
+                self.current_index = new_index
+                logger.debug(f"Файл перемещен, индекс обновлен на {new_index}")
+            except ValueError:
+                logger.warning(f"Файл {moved_file_name} не найден в новом списке после перемещения.")
+                if self.zip_files:
+                    self.current_index = 0  # Возвращаемся к началу списка
+                else:
+                    self.current_index = -1  # no files
         except Exception as e:
-            logger.exception(f"Failed to create marker file inside ZIP: {e}")
-            raise RuntimeError(f"Failed to create marker file inside ZIP: {e}")
-
+            logger.exception(f"Failed to move {zip_file_path} to {destination_path}: {e}")
+            raise  # Re-raise the exception
 
     @staticmethod
     def _check_sorted_marker(zip_file_path: str) -> bool:
