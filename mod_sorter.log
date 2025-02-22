@@ -1,0 +1,841 @@
+2025-02-22 20:03:28,118 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:03:28,119 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:03:31,791 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:03:31,792 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:03:31,815 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:03:31,816 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:03:33,629 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip as sorted.
+2025-02-22 20:03:33,629 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:03:33,658 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 7 column 9 (char 215)
+2025-02-22 20:03:33,658 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip due to: Expecting ',' delimiter: line 7 column 9 (char 215)
+2025-02-22 20:03:33,666 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: 2K-Tsukuba
+2025-02-22 20:03:33,667 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: 2K-Tsukuba
+2025-02-22 20:05:33,461 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:05:33,462 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:05:35,874 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:05:35,875 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:05:35,886 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:05:35,886 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:07:03,272 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:07:03,273 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:07:08,103 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:07:08,104 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:07:08,113 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:07:08,114 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:07:08,120 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:07:08,120 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bruckell Nine Semi Diesel Mod
+2025-02-22 20:07:10,677 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip as sorted.
+2025-02-22 20:07:10,677 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:07:14,159 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:07:14,159 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:07:20,421 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:07:20,421 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:07:24,986 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:07:24,986 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:07:25,005 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:07:25,005 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:07:25,022 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:07:25,022 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:08:43,223 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:08:43,228 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:08:45,412 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:08:45,413 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:08:47,096 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 20:08:47,096 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:08:49,414 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:08:49,414 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:08:50,640 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:08:50,640 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:08:51,511 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:08:51,512 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:08:51,540 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:08:51,540 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:08:51,567 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:08:51,567 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:09:53,812 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:09:53,820 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:09:56,954 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:09:56,955 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:09:58,137 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 20:09:58,137 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:09:59,338 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:09:59,339 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:10:00,099 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:10:00,099 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:10:00,889 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:10:00,890 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:10:00,917 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:10:00,917 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:10:00,945 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:10:00,945 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:10:56,205 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:10:56,214 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:10:58,620 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:10:58,622 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:10:59,861 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 20:10:59,861 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:11:00,286 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:11:00,286 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:11:00,642 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:11:00,643 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:11:01,222 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:11:01,222 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:11:01,251 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:11:01,251 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:11:01,280 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: American Island
+2025-02-22 20:11:01,280 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: American Island
+2025-02-22 20:11:05,969 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip as sorted.
+2025-02-22 20:11:05,970 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip
+2025-02-22 20:11:06,018 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Angry Cheese Wedge (The Outraged Update)
+2025-02-22 20:11:06,019 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Angry Cheese Wedge (The Outraged Update)
+2025-02-22 20:11:06,044 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Angry Cheese Wedge (The Outraged Update)
+2025-02-22 20:11:06,044 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Angry Cheese Wedge (The Outraged Update)
+2025-02-22 20:11:11,860 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip as sorted.
+2025-02-22 20:11:11,861 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip
+2025-02-22 20:11:11,893 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 14L Semi Truck Engine for Barstow
+2025-02-22 20:11:11,893 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 14L Semi Truck Engine for Barstow
+2025-02-22 20:11:11,899 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 14L Semi Truck Engine for Barstow
+2025-02-22 20:11:11,899 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 14L Semi Truck Engine for Barstow
+2025-02-22 20:11:16,735 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\apgdesemiswappedbarstow.zip
+2025-02-22 20:12:22,106 - ERROR - mod_sorter_app.py - delete_mod - Error deleting mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\apgdesemiswappedbarstow.zip
+Traceback (most recent call last):
+  File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
+    os.remove(current_file_path)
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\apgdesemiswappedbarstow.zip'
+2025-02-22 20:12:34,377 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:12:34,382 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:12:39,642 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:12:39,643 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 398 zip files.
+2025-02-22 20:12:40,951 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 20:12:40,951 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:12:41,565 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:12:41,566 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:12:41,988 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:12:41,988 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:12:42,434 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:12:42,435 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:12:42,939 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip is already marked as sorted.
+2025-02-22 20:12:42,940 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip
+2025-02-22 20:12:44,319 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip is already marked as sorted.
+2025-02-22 20:12:44,320 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip
+2025-02-22 20:12:44,325 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 14L Semi Truck Engine for Barstow
+2025-02-22 20:12:44,325 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 14L Semi Truck Engine for Barstow
+2025-02-22 20:12:44,330 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 14L Semi Truck Engine for Barstow
+2025-02-22 20:12:44,330 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 14L Semi Truck Engine for Barstow
+2025-02-22 20:12:45,853 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\apgdesemiswappedbarstow.zip
+2025-02-22 20:12:46,973 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: apgdesemiswappedbarstow.zip
+2025-02-22 20:12:46,973 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\apgdesemiswappedbarstow.zip
+2025-02-22 20:12:47,008 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: AZ1
+2025-02-22 20:12:47,008 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AZ1
+2025-02-22 20:12:47,018 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: AZ1
+2025-02-22 20:12:47,018 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AZ1
+2025-02-22 20:12:51,144 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\ARaz1.zip as sorted.
+2025-02-22 20:12:51,144 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\ARaz1.zip
+2025-02-22 20:12:51,270 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 6 column 2 (char 229)
+2025-02-22 20:12:51,271 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip due to: Expecting ',' delimiter: line 6 column 2 (char 229)
+2025-02-22 20:12:51,373 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: arctic_circle
+2025-02-22 20:12:51,373 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: arctic_circle
+2025-02-22 20:12:51,479 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 6 column 2 (char 229)
+2025-02-22 20:12:51,480 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip due to: Expecting ',' delimiter: line 6 column 2 (char 229)
+2025-02-22 20:12:51,510 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: arctic_circle
+2025-02-22 20:12:51,511 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: arctic_circle
+2025-02-22 20:13:01,382 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip as sorted.
+2025-02-22 20:13:01,383 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip
+2025-02-22 20:13:01,417 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:13:01,417 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:13:01,428 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:13:01,428 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:13:14,889 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+2025-02-22 20:13:16,707 - ERROR - mod_sorter_app.py - delete_mod - Error deleting mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+Traceback (most recent call last):
+  File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
+    os.remove(current_file_path)
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+2025-02-22 20:13:27,726 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+2025-02-22 20:13:29,427 - ERROR - mod_sorter_app.py - delete_mod - Error deleting mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+Traceback (most recent call last):
+  File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
+    os.remove(current_file_path)
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+2025-02-22 20:14:16,487 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:14:16,494 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:14:20,939 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:14:20,940 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 397 zip files.
+2025-02-22 20:14:22,085 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 20:14:22,085 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip
+2025-02-22 20:14:23,736 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 20:14:23,736 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip
+2025-02-22 20:14:24,148 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 20:14:24,148 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip
+2025-02-22 20:14:24,490 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 20:14:24,490 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:14:24,866 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip is already marked as sorted.
+2025-02-22 20:14:24,867 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip
+2025-02-22 20:14:25,211 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip is already marked as sorted.
+2025-02-22 20:14:25,211 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip
+2025-02-22 20:14:25,594 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\ARaz1.zip is already marked as sorted.
+2025-02-22 20:14:25,594 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\ARaz1.zip
+2025-02-22 20:14:26,191 - INFO - mod_sorter_app.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip is already marked as sorted.
+2025-02-22 20:14:26,191 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arctic_circle.zip
+2025-02-22 20:14:26,202 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:14:26,202 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:14:26,212 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:14:26,212 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:14:37,811 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+2025-02-22 20:14:41,015 - ERROR - mod_sorter_app.py - delete_mod - Error deleting mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+Traceback (most recent call last):
+  File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 663, in delete_mod
+    os.remove(current_file_path)
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+2025-02-22 20:15:09,433 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:15:09,438 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:15:11,809 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:15:11,810 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 397 zip files.
+2025-02-22 20:17:56,225 - INFO - mod_sorter_app.py - _ask_skip_sorted - User chose to skip sorted mods: True
+2025-02-22 20:17:56,331 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:17:56,338 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:17:58,774 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:17:58,775 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 397 zip files.
+2025-02-22 20:17:58,777 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 1930sengineswap.zip
+2025-02-22 20:17:58,787 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 2K-Tsukuba.zip
+2025-02-22 20:17:58,799 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 3axlecitybus.zip
+2025-02-22 20:17:58,800 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:17:58,813 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: american_island.zip
+2025-02-22 20:17:58,815 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: angrycheesewedge.zip
+2025-02-22 20:17:58,818 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: ARaz1.zip
+2025-02-22 20:17:58,872 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: arctic_circle.zip
+2025-02-22 20:17:58,883 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:17:58,883 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:17:58,894 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Expedition
+2025-02-22 20:17:58,894 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Expedition
+2025-02-22 20:18:03,823 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: arexped22.zip
+2025-02-22 20:18:03,823 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
+2025-02-22 20:18:03,964 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Explorer
+2025-02-22 20:18:03,964 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Explorer
+2025-02-22 20:18:04,024 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Explorer
+2025-02-22 20:18:04,024 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Explorer
+2025-02-22 20:18:07,135 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexplorer20.zip as sorted.
+2025-02-22 20:18:07,135 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexplorer20.zip
+2025-02-22 20:18:07,195 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Arianna Island
+2025-02-22 20:18:07,195 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Arianna Island
+2025-02-22 20:18:07,236 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Arianna Island
+2025-02-22 20:18:07,236 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Arianna Island
+2025-02-22 20:18:09,800 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\arianna_island.zip as sorted.
+2025-02-22 20:18:09,801 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arianna_island.zip
+2025-02-22 20:18:09,829 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Stambecco LAPV | Armored Truck
+2025-02-22 20:18:09,829 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Stambecco LAPV | Armored Truck
+2025-02-22 20:18:09,836 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Stambecco LAPV | Armored Truck
+2025-02-22 20:18:09,836 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Stambecco LAPV | Armored Truck
+2025-02-22 20:18:14,141 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\armored_stambecco.zip as sorted.
+2025-02-22 20:18:14,141 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\armored_stambecco.zip
+2025-02-22 20:18:14,226 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 6 column 1 (char 138)
+2025-02-22 20:18:14,227 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\Arzmas2.9.zip due to: Expecting ',' delimiter: line 6 column 1 (char 138)
+2025-02-22 20:18:14,349 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: Arzmas2.9
+2025-02-22 20:18:14,350 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Arzmas2.9
+2025-02-22 20:18:14,460 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 6 column 1 (char 138)
+2025-02-22 20:18:14,461 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\Arzmas2.9.zip due to: Expecting ',' delimiter: line 6 column 1 (char 138)
+2025-02-22 20:18:14,500 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: Arzmas2.9
+2025-02-22 20:18:14,500 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Arzmas2.9
+2025-02-22 20:18:19,094 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: Arzmas2.9.zip
+2025-02-22 20:18:19,094 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Arzmas2.9.zip
+2025-02-22 20:18:19,152 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: A8 D3/4E
+2025-02-22 20:18:19,153 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: A8 D3/4E
+2025-02-22 20:18:19,182 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: A8 D3/4E
+2025-02-22 20:18:19,182 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: A8 D3/4E
+2025-02-22 20:18:21,754 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\audi-s8 (1).zip as sorted.
+2025-02-22 20:18:21,754 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\audi-s8 (1).zip
+2025-02-22 20:18:21,824 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: 80 (B3 / B4)
+2025-02-22 20:18:21,825 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: 80 (B3 / B4)
+2025-02-22 20:18:21,861 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: 80 (B3 / B4)
+2025-02-22 20:18:21,861 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: 80 (B3 / B4)
+2025-02-22 20:18:23,325 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\Audi80b3ver1.5.zip as sorted.
+2025-02-22 20:18:23,325 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Audi80b3ver1.5.zip
+2025-02-22 20:18:23,373 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4/A4
+2025-02-22 20:18:23,373 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4/A4
+2025-02-22 20:18:23,389 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4/A4
+2025-02-22 20:18:23,390 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4/A4
+2025-02-22 20:18:24,497 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiA4 by hxmxnn.zip as sorted.
+2025-02-22 20:18:24,497 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiA4 by hxmxnn.zip
+2025-02-22 20:18:24,525 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 148 column 3 (char 2916)
+2025-02-22 20:18:24,525 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\audia4b9kenemationV2.zip due to: Expecting property name enclosed in double quotes: line 148 column 3 (char 2916)
+2025-02-22 20:18:24,548 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: audia4b9kenemationV2
+2025-02-22 20:18:24,549 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: audia4b9kenemationV2
+2025-02-22 20:18:24,559 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 148 column 3 (char 2916)
+2025-02-22 20:18:24,559 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\audia4b9kenemationV2.zip due to: Expecting property name enclosed in double quotes: line 148 column 3 (char 2916)
+2025-02-22 20:18:24,570 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: audia4b9kenemationV2
+2025-02-22 20:18:24,571 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: audia4b9kenemationV2
+2025-02-22 20:18:25,627 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\audia4b9kenemationV2.zip as sorted.
+2025-02-22 20:18:25,627 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\audia4b9kenemationV2.zip
+2025-02-22 20:18:25,665 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: R8 2016-2023
+2025-02-22 20:18:25,665 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: R8 2016-2023
+2025-02-22 20:18:25,682 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: R8 2016-2023
+2025-02-22 20:18:25,682 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: R8 2016-2023
+2025-02-22 20:18:28,302 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: AudiR8_Revamp_NMG_V3.zip
+2025-02-22 20:18:28,302 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiR8_Revamp_NMG_V3.zip
+2025-02-22 20:18:28,352 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4 B5
+2025-02-22 20:18:28,352 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4 B5
+2025-02-22 20:18:28,372 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4 B5
+2025-02-22 20:18:28,373 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4 B5
+2025-02-22 20:18:30,631 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: AudiRS4B5V1.4.zip
+2025-02-22 20:18:30,632 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiRS4B5V1.4.zip
+2025-02-22 20:18:30,777 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: e-Tron GT
+2025-02-22 20:18:30,777 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e-Tron GT
+2025-02-22 20:18:30,847 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: e-Tron GT
+2025-02-22 20:18:30,847 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e-Tron GT
+2025-02-22 20:18:32,051 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiRSEtronGT_RELEASE.zip as sorted.
+2025-02-22 20:18:32,051 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\AudiRSEtronGT_RELEASE.zip
+2025-02-22 20:18:32,089 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4 B5
+2025-02-22 20:18:32,089 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4 B5
+2025-02-22 20:18:32,103 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS4 B5
+2025-02-22 20:18:32,103 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS4 B5
+2025-02-22 20:18:34,851 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: Audi_RS4_B5.zip
+2025-02-22 20:18:34,851 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Audi_RS4_B5.zip
+2025-02-22 20:18:34,922 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS6
+2025-02-22 20:18:34,922 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS6
+2025-02-22 20:18:34,954 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: RS6
+2025-02-22 20:18:34,955 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: RS6
+2025-02-22 20:18:36,272 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\Audi_RS6.zip as sorted.
+2025-02-22 20:18:36,272 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Audi_RS6.zip
+2025-02-22 20:18:36,299 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 112 column 3 (char 2129)
+2025-02-22 20:18:36,299 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\AUDI_RS7_v1.1_Kenemation.zip due to: Expecting property name enclosed in double quotes: line 112 column 3 (char 2129)
+2025-02-22 20:18:36,305 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: AUDI_RS7_v1.1_Kenemation
+2025-02-22 20:18:36,305 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AUDI_RS7_v1.1_Kenemation
+2025-02-22 20:18:36,317 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 112 column 3 (char 2129)
+2025-02-22 20:18:36,318 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\AUDI_RS7_v1.1_Kenemation.zip due to: Expecting property name enclosed in double quotes: line 112 column 3 (char 2129)
+2025-02-22 20:18:36,319 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: AUDI_RS7_v1.1_Kenemation
+2025-02-22 20:18:36,320 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AUDI_RS7_v1.1_Kenemation
+2025-02-22 20:18:38,744 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\AUDI_RS7_v1.1_Kenemation.zip as sorted.
+2025-02-22 20:18:38,745 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\AUDI_RS7_v1.1_Kenemation.zip
+2025-02-22 20:18:38,767 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 13BT (Rotary) for Hirochi Aurata
+2025-02-22 20:18:38,767 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 13BT (Rotary) for Hirochi Aurata
+2025-02-22 20:18:38,774 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: 13BT (Rotary) for Hirochi Aurata
+2025-02-22 20:18:38,774 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: 13BT (Rotary) for Hirochi Aurata
+2025-02-22 20:18:42,502 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\aurata_rotary.zip as sorted.
+2025-02-22 20:18:42,503 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\aurata_rotary.zip
+2025-02-22 20:18:48,223 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\Autobello_cab.zip as sorted.
+2025-02-22 20:18:48,224 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Autobello_cab.zip
+2025-02-22 20:18:48,244 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 780 column 7 (char 13180)
+2025-02-22 20:18:48,245 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\autobello_minilena.zip due to: Expecting ',' delimiter: line 780 column 7 (char 13180)
+2025-02-22 20:18:48,696 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: autobello_minilena
+2025-02-22 20:18:48,696 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: autobello_minilena
+2025-02-22 20:18:48,703 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 780 column 7 (char 13180)
+2025-02-22 20:18:48,703 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\autobello_minilena.zip due to: Expecting ',' delimiter: line 780 column 7 (char 13180)
+2025-02-22 20:18:48,937 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: autobello_minilena
+2025-02-22 20:18:48,937 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: autobello_minilena
+2025-02-22 20:18:51,501 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\autobello_minilena.zip as sorted.
+2025-02-22 20:18:51,502 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\autobello_minilena.zip
+2025-02-22 20:18:51,559 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Autron Cacatron
+2025-02-22 20:18:51,560 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Autron Cacatron
+2025-02-22 20:18:51,587 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Autron Cacatron
+2025-02-22 20:18:51,587 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Autron Cacatron
+2025-02-22 20:18:59,188 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: avtron.zip
+2025-02-22 20:18:59,188 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\avtron.zip
+2025-02-22 20:18:59,210 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 764 column 9 (char 13076)
+2025-02-22 20:18:59,211 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\awbete_adamplg.zip due to: Expecting ',' delimiter: line 764 column 9 (char 13076)
+2025-02-22 20:18:59,567 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: awbete_adamplg
+2025-02-22 20:18:59,567 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: awbete_adamplg
+2025-02-22 20:18:59,581 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 764 column 9 (char 13076)
+2025-02-22 20:18:59,582 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\awbete_adamplg.zip due to: Expecting ',' delimiter: line 764 column 9 (char 13076)
+2025-02-22 20:18:59,755 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: awbete_adamplg
+2025-02-22 20:18:59,755 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: awbete_adamplg
+2025-02-22 20:19:03,935 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\awbete_adamplg.zip as sorted.
+2025-02-22 20:19:03,936 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\awbete_adamplg.zip
+2025-02-22 20:19:03,975 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Axle Valley
+2025-02-22 20:19:03,975 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Axle Valley
+2025-02-22 20:19:03,992 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Axle Valley
+2025-02-22 20:19:03,992 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Axle Valley
+2025-02-22 20:19:06,766 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\axle_valley.zip as sorted.
+2025-02-22 20:19:06,766 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\axle_valley.zip
+2025-02-22 20:19:06,782 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Barstow Long Nose V16
+2025-02-22 20:19:06,782 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Barstow Long Nose V16
+2025-02-22 20:19:06,783 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Barstow Long Nose V16
+2025-02-22 20:19:06,784 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Barstow Long Nose V16
+2025-02-22 20:19:09,449 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: barstow_v16.zip
+2025-02-22 20:19:09,449 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\barstow_v16.zip
+2025-02-22 20:19:09,482 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: vanilla tires on other wheels
+2025-02-22 20:19:09,482 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: vanilla tires on other wheels
+2025-02-22 20:19:09,486 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: vanilla tires on other wheels
+2025-02-22 20:19:09,487 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: vanilla tires on other wheels
+2025-02-22 20:19:13,607 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\basegame_offroad_compat.zip as sorted.
+2025-02-22 20:19:13,607 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\basegame_offroad_compat.zip
+2025-02-22 20:19:13,697 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Neeko's base models
+2025-02-22 20:19:13,697 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Neeko's base models
+2025-02-22 20:19:13,718 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Neeko's base models
+2025-02-22 20:19:13,718 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Neeko's base models
+2025-02-22 20:19:16,030 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\base_models_neeko.zip as sorted.
+2025-02-22 20:19:16,031 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\base_models_neeko.zip
+2025-02-22 20:19:16,074 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bastion  Battleeagle
+2025-02-22 20:19:16,074 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bastion  Battleeagle
+2025-02-22 20:19:16,092 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bastion  Battleeagle
+2025-02-22 20:19:16,093 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bastion  Battleeagle
+2025-02-22 20:19:19,364 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: BastionBattleeagle.zip
+2025-02-22 20:19:19,365 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BastionBattleeagle.zip
+2025-02-22 20:19:19,382 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bastion 3.2 V6 Diesel Engine
+2025-02-22 20:19:19,382 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bastion 3.2 V6 Diesel Engine
+2025-02-22 20:19:19,385 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bastion 3.2 V6 Diesel Engine
+2025-02-22 20:19:19,385 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bastion 3.2 V6 Diesel Engine
+2025-02-22 20:19:21,681 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bastion_diesel_v6.zip as sorted.
+2025-02-22 20:19:21,681 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bastion_diesel_v6.zip
+2025-02-22 20:19:21,831 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: E38 7-Series(BBMods)
+2025-02-22 20:19:21,832 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: E38 7-Series(BBMods)
+2025-02-22 20:19:21,925 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: E38 7-Series(BBMods)
+2025-02-22 20:19:21,925 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: E38 7-Series(BBMods)
+2025-02-22 20:19:31,062 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsBMWE38.zip as sorted.
+2025-02-22 20:19:31,063 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsBMWE38.zip
+2025-02-22 20:19:31,131 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Countryman(F60)
+2025-02-22 20:19:31,131 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Countryman(F60)
+2025-02-22 20:19:31,165 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Countryman(F60)
+2025-02-22 20:19:31,165 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Countryman(F60)
+2025-02-22 20:19:33,969 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: BBModsMiniCountryman.zip
+2025-02-22 20:19:33,969 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsMiniCountryman.zip
+2025-02-22 20:19:33,993 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 11 column 5 (char 207)
+2025-02-22 20:19:33,993 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsMulsanne16.zip due to: Expecting ',' delimiter: line 11 column 5 (char 207)
+2025-02-22 20:19:34,001 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: BBModsMulsanne16
+2025-02-22 20:19:34,001 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: BBModsMulsanne16
+2025-02-22 20:19:34,012 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 11 column 5 (char 207)
+2025-02-22 20:19:34,012 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsMulsanne16.zip due to: Expecting ',' delimiter: line 11 column 5 (char 207)
+2025-02-22 20:19:34,016 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: BBModsMulsanne16
+2025-02-22 20:19:34,016 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: BBModsMulsanne16
+2025-02-22 20:19:35,408 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsMulsanne16.zip as sorted.
+2025-02-22 20:19:35,408 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsMulsanne16.zip
+2025-02-22 20:19:35,966 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Transit (Mk7)
+2025-02-22 20:19:35,967 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Transit (Mk7)
+2025-02-22 20:19:36,427 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Transit (Mk7)
+2025-02-22 20:19:36,427 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Transit (Mk7)
+2025-02-22 20:19:37,531 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsTransitMk7.zip as sorted.
+2025-02-22 20:19:37,532 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsTransitMk7.zip
+2025-02-22 20:19:37,677 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: (W201)
+2025-02-22 20:19:37,677 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: (W201)
+2025-02-22 20:19:37,787 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: (W201)
+2025-02-22 20:19:37,788 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: (W201)
+2025-02-22 20:19:42,012 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsW201.zip as sorted.
+2025-02-22 20:19:42,012 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsW201.zip
+2025-02-22 20:19:42,700 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: W907-W910
+2025-02-22 20:19:42,700 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: W907-W910
+2025-02-22 20:19:43,236 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: W907-W910
+2025-02-22 20:19:43,236 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: W907-W910
+2025-02-22 20:19:44,363 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsW907.zip as sorted.
+2025-02-22 20:19:44,363 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BBModsW907.zip
+2025-02-22 20:19:44,388 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Beam Regenerator
+2025-02-22 20:19:44,388 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Beam Regenerator
+2025-02-22 20:19:44,399 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Beam Regenerator
+2025-02-22 20:19:44,399 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Beam Regenerator
+2025-02-22 20:19:48,673 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\beamregenerator.zip as sorted.
+2025-02-22 20:19:48,673 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\beamregenerator.zip
+2025-02-22 20:19:48,717 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bella's Nine Doodlebug
+2025-02-22 20:19:48,717 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bella's Nine Doodlebug
+2025-02-22 20:19:48,723 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bella's Nine Doodlebug
+2025-02-22 20:19:48,724 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bella's Nine Doodlebug
+2025-02-22 20:20:03,794 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bella_doodlebug.zip as sorted.
+2025-02-22 20:20:03,794 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bella_doodlebug.zip
+2025-02-22 20:20:03,817 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 232 column 3 (char 4539)
+2025-02-22 20:20:03,817 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\berlingo.zip due to: Expecting property name enclosed in double quotes: line 232 column 3 (char 4539)
+2025-02-22 20:20:03,822 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: berlingo
+2025-02-22 20:20:03,822 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: berlingo
+2025-02-22 20:20:03,833 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 232 column 3 (char 4539)
+2025-02-22 20:20:03,833 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\berlingo.zip due to: Expecting property name enclosed in double quotes: line 232 column 3 (char 4539)
+2025-02-22 20:20:03,835 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: berlingo
+2025-02-22 20:20:03,835 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: berlingo
+2025-02-22 20:20:13,439 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: berlingo.zip
+2025-02-22 20:20:13,440 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\berlingo.zip
+2025-02-22 20:20:13,442 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: BetterPerformanceTimer
+2025-02-22 20:20:13,442 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: BetterPerformanceTimer
+2025-02-22 20:20:13,444 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: BetterPerformanceTimer
+2025-02-22 20:20:13,445 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: BetterPerformanceTimer
+2025-02-22 20:20:15,154 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BetterPerformanceTimer.zip as sorted.
+2025-02-22 20:20:15,155 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BetterPerformanceTimer.zip
+2025-02-22 20:20:15,189 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: More T-Series Parts
+2025-02-22 20:20:15,190 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: More T-Series Parts
+2025-02-22 20:20:15,197 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: More T-Series Parts
+2025-02-22 20:20:15,197 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: More T-Series Parts
+2025-02-22 20:20:17,501 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\big_rig_upgrade.zip as sorted.
+2025-02-22 20:20:17,501 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\big_rig_upgrade.zip
+2025-02-22 20:20:17,524 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bluebuck Convertible
+2025-02-22 20:20:17,525 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bluebuck Convertible
+2025-02-22 20:20:17,530 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bluebuck Convertible
+2025-02-22 20:20:17,531 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bluebuck Convertible
+2025-02-22 20:20:19,110 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bluebuck_convertible.zip as sorted.
+2025-02-22 20:20:19,110 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bluebuck_convertible.zip
+2025-02-22 20:20:19,142 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: BMW 7-Series (G11/G12)
+2025-02-22 20:20:19,142 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: BMW 7-Series (G11/G12)
+2025-02-22 20:20:19,154 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: BMW 7-Series (G11/G12)
+2025-02-22 20:20:19,154 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: BMW 7-Series (G11/G12)
+2025-02-22 20:20:27,860 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BMW7G11_Revamped.zip as sorted.
+2025-02-22 20:20:27,861 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BMW7G11_Revamped.zip
+2025-02-22 20:20:27,888 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 110 column 5 (char 6539)
+2025-02-22 20:20:27,889 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwe36_revamp_adamplg.zip due to: Expecting property name enclosed in double quotes: line 110 column 5 (char 6539)
+2025-02-22 20:20:27,891 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bmwe36_revamp_adamplg
+2025-02-22 20:20:27,892 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bmwe36_revamp_adamplg
+2025-02-22 20:20:27,905 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 110 column 5 (char 6539)
+2025-02-22 20:20:27,905 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwe36_revamp_adamplg.zip due to: Expecting property name enclosed in double quotes: line 110 column 5 (char 6539)
+2025-02-22 20:20:27,906 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bmwe36_revamp_adamplg
+2025-02-22 20:20:27,906 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bmwe36_revamp_adamplg
+2025-02-22 20:20:30,647 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwe36_revamp_adamplg.zip as sorted.
+2025-02-22 20:20:30,648 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwe36_revamp_adamplg.zip
+2025-02-22 20:20:30,991 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: 5-Series F10
+2025-02-22 20:20:30,991 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: 5-Series F10
+2025-02-22 20:20:31,101 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: 5-Series F10
+2025-02-22 20:20:31,101 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: 5-Series F10
+2025-02-22 20:20:36,669 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwm5f10v2fix.zip as sorted.
+2025-02-22 20:20:36,669 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmwm5f10v2fix.zip
+2025-02-22 20:20:36,700 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 223 column 9 (char 4013)
+2025-02-22 20:20:36,700 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmw_serie5_e34_matissator_improved.zip due to: Expecting ',' delimiter: line 223 column 9 (char 4013)
+2025-02-22 20:20:36,704 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bmw_serie5_e34_matissator_improved
+2025-02-22 20:20:36,704 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bmw_serie5_e34_matissator_improved
+2025-02-22 20:20:36,725 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 223 column 9 (char 4013)
+2025-02-22 20:20:36,725 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmw_serie5_e34_matissator_improved.zip due to: Expecting ',' delimiter: line 223 column 9 (char 4013)
+2025-02-22 20:20:36,727 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bmw_serie5_e34_matissator_improved
+2025-02-22 20:20:36,727 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bmw_serie5_e34_matissator_improved
+2025-02-22 20:20:43,427 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmw_serie5_e34_matissator_improved.zip as sorted.
+2025-02-22 20:20:43,428 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bmw_serie5_e34_matissator_improved.zip
+2025-02-22 20:20:43,452 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Kijang KF10
+2025-02-22 20:20:43,452 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Kijang KF10
+2025-02-22 20:20:43,460 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Kijang KF10
+2025-02-22 20:20:43,460 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Kijang KF10
+2025-02-22 20:20:48,094 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bngtunerkijangkf10v1300824.zip as sorted.
+2025-02-22 20:20:48,094 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bngtunerkijangkf10v1300824.zip
+2025-02-22 20:20:48,849 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Skyline
+2025-02-22 20:20:48,850 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Skyline
+2025-02-22 20:20:49,153 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Skyline
+2025-02-22 20:20:49,154 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Skyline
+2025-02-22 20:21:06,319 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BNR33.zip as sorted.
+2025-02-22 20:21:06,321 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BNR33.zip
+2025-02-22 20:21:06,356 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Belasco Diesel in the Bolide
+2025-02-22 20:21:06,356 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Belasco Diesel in the Bolide
+2025-02-22 20:21:06,373 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Belasco Diesel in the Bolide
+2025-02-22 20:21:06,373 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Belasco Diesel in the Bolide
+2025-02-22 20:21:09,572 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BolidewithDiesel.zip as sorted.
+2025-02-22 20:21:09,572 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BolidewithDiesel.zip
+2025-02-22 20:21:09,615 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Vehicle Global Strength, Weight, Size and Other Values Edit (WORKS FOR MODS!)
+2025-02-22 20:21:09,615 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Vehicle Global Strength, Weight, Size and Other Values Edit (WORKS FOR MODS!)
+2025-02-22 20:21:09,642 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Vehicle Global Strength, Weight, Size and Other Values Edit (WORKS FOR MODS!)
+2025-02-22 20:21:09,642 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Vehicle Global Strength, Weight, Size and Other Values Edit (WORKS FOR MODS!)
+2025-02-22 20:21:11,176 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bongo_agenty_global_values_tuning.zip as sorted.
+2025-02-22 20:21:11,177 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bongo_agenty_global_values_tuning.zip
+2025-02-22 20:21:11,196 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Fillet PT100
+2025-02-22 20:21:11,196 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Fillet PT100
+2025-02-22 20:21:11,201 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Fillet PT100
+2025-02-22 20:21:11,202 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Fillet PT100
+2025-02-22 20:21:13,574 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: bongo_fillet_pt100.zip
+2025-02-22 20:21:13,575 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bongo_fillet_pt100.zip
+2025-02-22 20:21:13,594 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: V8/11 1000
+2025-02-22 20:21:13,594 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: V8/11 1000
+2025-02-22 20:21:13,599 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: V8/11 1000
+2025-02-22 20:21:13,599 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: V8/11 1000
+2025-02-22 20:21:15,045 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: bongo_v8_11_1000.zip
+2025-02-22 20:21:15,045 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bongo_v8_11_1000.zip
+2025-02-22 20:21:15,067 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 43 column 9 (char 801)
+2025-02-22 20:21:15,067 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bPhone.zip due to: Expecting property name enclosed in double quotes: line 43 column 9 (char 801)
+2025-02-22 20:21:15,087 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bPhone
+2025-02-22 20:21:15,087 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bPhone
+2025-02-22 20:21:15,091 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 43 column 9 (char 801)
+2025-02-22 20:21:15,091 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\bPhone.zip due to: Expecting property name enclosed in double quotes: line 43 column 9 (char 801)
+2025-02-22 20:21:15,106 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: bPhone
+2025-02-22 20:21:15,106 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: bPhone
+2025-02-22 20:21:18,746 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: bPhone.zip
+2025-02-22 20:21:18,746 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bPhone.zip
+2025-02-22 20:21:18,814 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Gavril Bluebuck Flattop and Wraparound Windshield
+2025-02-22 20:21:18,814 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Gavril Bluebuck Flattop and Wraparound Windshield
+2025-02-22 20:21:18,831 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Gavril Bluebuck Flattop and Wraparound Windshield
+2025-02-22 20:21:18,832 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Gavril Bluebuck Flattop and Wraparound Windshield
+2025-02-22 20:21:20,615 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\bubuflattopwaboll.zip as sorted.
+2025-02-22 20:21:20,616 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\bubuflattopwaboll.zip
+2025-02-22 20:21:20,739 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: C180 W202
+2025-02-22 20:21:20,739 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: C180 W202
+2025-02-22 20:21:20,810 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: C180 W202
+2025-02-22 20:21:20,811 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: C180 W202
+2025-02-22 20:21:22,690 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\burg_w202edit.zip as sorted.
+2025-02-22 20:21:22,690 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\burg_w202edit.zip
+2025-02-22 20:21:22,742 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Windsor
+2025-02-22 20:21:22,742 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Windsor
+2025-02-22 20:21:22,764 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Windsor
+2025-02-22 20:21:22,764 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Windsor
+2025-02-22 20:21:27,116 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\burnsidewindsor (1).zip as sorted.
+2025-02-22 20:21:27,116 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\burnsidewindsor (1).zip
+2025-02-22 20:21:27,135 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside 313 CUI 'Dura-Fleet' V8 Diesel Engine
+2025-02-22 20:21:27,135 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside 313 CUI 'Dura-Fleet' V8 Diesel Engine
+2025-02-22 20:21:27,138 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside 313 CUI 'Dura-Fleet' V8 Diesel Engine
+2025-02-22 20:21:27,139 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside 313 CUI 'Dura-Fleet' V8 Diesel Engine
+2025-02-22 20:21:29,395 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\burnside_diesel.zip as sorted.
+2025-02-22 20:21:29,395 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\burnside_diesel.zip
+2025-02-22 20:21:29,436 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu BX Ute/Gavril Huntsman
+2025-02-22 20:21:29,436 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu BX Ute/Gavril Huntsman
+2025-02-22 20:21:29,445 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu BX Ute/Gavril Huntsman
+2025-02-22 20:21:29,445 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu BX Ute/Gavril Huntsman
+2025-02-22 20:21:33,131 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\BX_Ute_Gavril_Huntsman.zip as sorted.
+2025-02-22 20:21:33,131 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\BX_Ute_Gavril_Huntsman.zip
+2025-02-22 20:21:33,245 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting property name enclosed in double quotes: line 71 column 1 (char 1882)
+2025-02-22 20:21:33,245 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\canyon rush.zip due to: Expecting property name enclosed in double quotes: line 71 column 1 (char 1882)
+2025-02-22 20:21:33,257 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: canyon rush
+2025-02-22 20:21:33,257 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: canyon rush
+2025-02-22 20:21:33,358 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting property name enclosed in double quotes: line 71 column 1 (char 1882)
+2025-02-22 20:21:33,358 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\canyon rush.zip due to: Expecting property name enclosed in double quotes: line 71 column 1 (char 1882)
+2025-02-22 20:21:33,363 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: canyon rush
+2025-02-22 20:21:33,363 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: canyon rush
+2025-02-22 20:21:37,226 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\canyon rush.zip as sorted.
+2025-02-22 20:21:37,227 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\canyon rush.zip
+2025-02-22 20:21:37,253 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: cap.zip
+2025-02-22 20:21:37,254 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: cap.zip
+2025-02-22 20:21:37,262 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: cap.zip
+2025-02-22 20:21:37,262 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: cap.zip
+2025-02-22 20:21:38,628 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\cap.zip as sorted.
+2025-02-22 20:21:38,628 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\cap.zip
+2025-02-22 20:21:38,681 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Cayenne (957)
+2025-02-22 20:21:38,681 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Cayenne (957)
+2025-02-22 20:21:38,704 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Cayenne (957)
+2025-02-22 20:21:38,704 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Cayenne (957)
+2025-02-22 20:21:39,832 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\cayenne957kenemation.zip as sorted.
+2025-02-22 20:21:39,832 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\cayenne957kenemation.zip
+2025-02-22 20:21:39,853 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 24 column 7 (char 415)
+2025-02-22 20:21:39,853 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\CCX Updated hw23.zip due to: Expecting ',' delimiter: line 24 column 7 (char 415)
+2025-02-22 20:21:39,858 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: CCX Updated hw23
+2025-02-22 20:21:39,858 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CCX Updated hw23
+2025-02-22 20:21:39,866 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting ',' delimiter: line 24 column 7 (char 415)
+2025-02-22 20:21:39,866 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\CCX Updated hw23.zip due to: Expecting ',' delimiter: line 24 column 7 (char 415)
+2025-02-22 20:21:39,867 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: CCX Updated hw23
+2025-02-22 20:21:39,867 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CCX Updated hw23
+2025-02-22 20:21:41,640 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: CCX Updated hw23.zip
+2025-02-22 20:21:41,641 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\CCX Updated hw23.zip
+2025-02-22 20:21:41,977 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Challenger
+2025-02-22 20:21:41,978 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Challenger
+2025-02-22 20:21:42,226 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Challenger
+2025-02-22 20:21:42,226 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Challenger
+2025-02-22 20:21:43,340 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\challengerkenemationV2.zip as sorted.
+2025-02-22 20:21:43,340 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\challengerkenemationV2.zip
+2025-02-22 20:21:43,358 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Extra data: line 775 column 1 (char 13537)
+2025-02-22 20:21:43,359 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\cnsize.zip due to: Extra data: line 775 column 1 (char 13537)
+2025-02-22 20:21:43,379 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: cnsize
+2025-02-22 20:21:43,379 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: cnsize
+2025-02-22 20:21:43,400 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Extra data: line 775 column 1 (char 13537)
+2025-02-22 20:21:43,400 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\cnsize.zip due to: Extra data: line 775 column 1 (char 13537)
+2025-02-22 20:21:43,408 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: cnsize
+2025-02-22 20:21:43,408 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: cnsize
+2025-02-22 20:21:48,276 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\cnsize.zip as sorted.
+2025-02-22 20:21:48,276 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\cnsize.zip
+2025-02-22 20:21:48,313 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: CNVY Hopper Offroad Parts
+2025-02-22 20:21:48,313 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: CNVY Hopper Offroad Parts
+2025-02-22 20:21:48,319 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: CNVY Hopper Offroad Parts
+2025-02-22 20:21:48,319 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: CNVY Hopper Offroad Parts
+2025-02-22 20:21:52,637 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\CNVY_Hopper_Offroad_Parts_V6.zip as sorted.
+2025-02-22 20:21:52,637 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\CNVY_Hopper_Offroad_Parts_V6.zip
+2025-02-22 20:21:52,681 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside Commander
+2025-02-22 20:21:52,681 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside Commander
+2025-02-22 20:21:52,689 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside Commander
+2025-02-22 20:21:52,690 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside Commander
+2025-02-22 20:30:50,852 - INFO - mod_sorter_app.py - _ask_skip_sorted - User chose to skip sorted mods: True
+2025-02-22 20:30:50,873 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
+2025-02-22 20:30:50,874 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:30:54,080 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:30:54,080 - INFO - mod_sorter_app.py - __init__ - ModManager initialized, found 383 zip files.
+2025-02-22 20:30:54,082 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 1930sengineswap.zip
+2025-02-22 20:30:54,086 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 2K-Tsukuba.zip
+2025-02-22 20:30:54,090 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: 3axlecitybus.zip
+2025-02-22 20:30:54,091 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:30:54,098 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: american_island.zip
+2025-02-22 20:30:54,099 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: angrycheesewedge.zip
+2025-02-22 20:30:54,100 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: ARaz1.zip
+2025-02-22 20:30:54,121 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: arctic_circle.zip
+2025-02-22 20:30:54,123 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: arexplorer20.zip
+2025-02-22 20:30:54,132 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: arianna_island.zip
+2025-02-22 20:30:54,133 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: armored_stambecco.zip
+2025-02-22 20:30:54,136 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: audi-s8 (1).zip
+2025-02-22 20:30:54,139 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: Audi80b3ver1.5.zip
+2025-02-22 20:30:54,141 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: AudiA4 by hxmxnn.zip
+2025-02-22 20:30:54,144 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: audia4b9kenemationV2.zip
+2025-02-22 20:30:54,146 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: AudiRSEtronGT_RELEASE.zip
+2025-02-22 20:30:54,148 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: Audi_RS6.zip
+2025-02-22 20:30:54,150 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: AUDI_RS7_v1.1_Kenemation.zip
+2025-02-22 20:30:54,151 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: aurata_rotary.zip
+2025-02-22 20:30:54,151 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: Autobello_cab.zip
+2025-02-22 20:30:54,152 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: autobello_minilena.zip
+2025-02-22 20:30:54,154 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: awbete_adamplg.zip
+2025-02-22 20:30:54,157 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: axle_valley.zip
+2025-02-22 20:30:54,157 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: basegame_offroad_compat.zip
+2025-02-22 20:30:54,158 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: base_models_neeko.zip
+2025-02-22 20:30:54,159 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bastion_diesel_v6.zip
+2025-02-22 20:30:54,162 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BBModsBMWE38.zip
+2025-02-22 20:30:54,164 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BBModsMulsanne16.zip
+2025-02-22 20:30:54,167 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BBModsTransitMk7.zip
+2025-02-22 20:30:54,169 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BBModsW201.zip
+2025-02-22 20:30:54,171 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BBModsW907.zip
+2025-02-22 20:30:54,172 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: beamregenerator.zip
+2025-02-22 20:30:54,172 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bella_doodlebug.zip
+2025-02-22 20:30:54,172 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BetterPerformanceTimer.zip
+2025-02-22 20:30:54,173 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: big_rig_upgrade.zip
+2025-02-22 20:30:54,173 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bluebuck_convertible.zip
+2025-02-22 20:30:54,175 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BMW7G11_Revamped.zip
+2025-02-22 20:30:54,177 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bmwe36_revamp_adamplg.zip
+2025-02-22 20:30:54,179 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bmwm5f10v2fix.zip
+2025-02-22 20:30:54,183 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bmw_serie5_e34_matissator_improved.zip
+2025-02-22 20:30:54,184 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bngtunerkijangkf10v1300824.zip
+2025-02-22 20:30:54,186 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BNR33.zip
+2025-02-22 20:30:54,186 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BolidewithDiesel.zip
+2025-02-22 20:30:54,192 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bongo_agenty_global_values_tuning.zip
+2025-02-22 20:30:54,193 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: bubuflattopwaboll.zip
+2025-02-22 20:30:54,195 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: burg_w202edit.zip
+2025-02-22 20:30:54,196 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: burnsidewindsor (1).zip
+2025-02-22 20:30:54,197 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: burnside_diesel.zip
+2025-02-22 20:30:54,198 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: BX_Ute_Gavril_Huntsman.zip
+2025-02-22 20:30:54,217 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: canyon rush.zip
+2025-02-22 20:30:54,218 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: cap.zip
+2025-02-22 20:30:54,219 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: cayenne957kenemation.zip
+2025-02-22 20:30:54,222 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: challengerkenemationV2.zip
+2025-02-22 20:30:54,223 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: cnsize.zip
+2025-02-22 20:30:54,224 - INFO - mod_sorter_app.py - load_current_mod - Skipping sorted mod: CNVY_Hopper_Offroad_Parts_V6.zip
+2025-02-22 20:30:54,231 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside Commander
+2025-02-22 20:30:54,231 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside Commander
+2025-02-22 20:30:54,236 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Burnside Commander
+2025-02-22 20:30:54,236 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Burnside Commander
+2025-02-22 20:30:58,009 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\commander.zip as sorted.
+2025-02-22 20:30:58,009 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\commander.zip
+2025-02-22 20:30:58,043 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 196 column 5 (char 3693)
+2025-02-22 20:30:58,043 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\configpack_KLJP.zip due to: Expecting property name enclosed in double quotes: line 196 column 5 (char 3693)
+2025-02-22 20:30:58,093 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: configpack_KLJP
+2025-02-22 20:30:58,093 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: configpack_KLJP
+2025-02-22 20:30:58,130 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 196 column 5 (char 3693)
+2025-02-22 20:30:58,130 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\configpack_KLJP.zip due to: Expecting property name enclosed in double quotes: line 196 column 5 (char 3693)
+2025-02-22 20:30:58,145 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: configpack_KLJP
+2025-02-22 20:30:58,145 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: configpack_KLJP
+2025-02-22 20:31:00,973 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\configpack_KLJP.zip as sorted.
+2025-02-22 20:31:00,974 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\configpack_KLJP.zip
+2025-02-22 20:31:01,046 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: KLJP Core Mod
+2025-02-22 20:31:01,047 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: KLJP Core Mod
+2025-02-22 20:31:01,064 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: KLJP Core Mod
+2025-02-22 20:31:01,064 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: KLJP Core Mod
+2025-02-22 20:31:02,391 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\coremod_KLJP.zip as sorted.
+2025-02-22 20:31:02,391 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\coremod_KLJP.zip
+2025-02-22 20:31:02,425 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu Covima
+2025-02-22 20:31:02,425 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu Covima
+2025-02-22 20:31:02,435 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu Covima
+2025-02-22 20:31:02,435 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu Covima
+2025-02-22 20:31:08,713 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: covima_new.zip
+2025-02-22 20:31:08,713 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\covima_new.zip
+2025-02-22 20:31:08,741 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu Covet Truck/Covup
+2025-02-22 20:31:08,741 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu Covet Truck/Covup
+2025-02-22 20:31:08,746 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Ibishu Covet Truck/Covup
+2025-02-22 20:31:08,746 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Ibishu Covet Truck/Covup
+2025-02-22 20:31:10,399 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\covupdutchyv101.zip as sorted.
+2025-02-22 20:31:10,399 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\covupdutchyv101.zip
+2025-02-22 20:31:10,469 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Land Cruiser (200)
+2025-02-22 20:31:10,469 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Land Cruiser (200)
+2025-02-22 20:31:10,490 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Land Cruiser (200)
+2025-02-22 20:31:10,490 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Land Cruiser (200)
+2025-02-22 20:31:12,725 - INFO - mod_sorter_app.py - remove_current_zip_file - Removed zip file from list: Cruiser200BMNGM.zip
+2025-02-22 20:31:12,725 - INFO - mod_sorter_app.py - delete_mod - Deleted mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\Cruiser200BMNGM.zip
+2025-02-22 20:31:12,755 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: CrossSport
+2025-02-22 20:31:12,755 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CrossSport
+2025-02-22 20:31:12,765 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: CrossSport
+2025-02-22 20:31:12,766 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CrossSport
+2025-02-22 20:31:13,797 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\cxseven.zip as sorted.
+2025-02-22 20:31:13,797 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\cxseven.zip
+2025-02-22 20:31:13,814 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 52 column 5 (char 925)
+2025-02-22 20:31:13,814 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\darkie_evox.zip due to: Expecting property name enclosed in double quotes: line 52 column 5 (char 925)
+2025-02-22 20:31:13,821 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: darkie_evox
+2025-02-22 20:31:13,821 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: darkie_evox
+2025-02-22 20:31:13,825 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 52 column 5 (char 925)
+2025-02-22 20:31:13,826 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\darkie_evox.zip due to: Expecting property name enclosed in double quotes: line 52 column 5 (char 925)
+2025-02-22 20:31:13,828 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: darkie_evox
+2025-02-22 20:31:13,828 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: darkie_evox
+2025-02-22 20:31:15,310 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\darkie_evox.zip as sorted.
+2025-02-22 20:31:15,310 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\darkie_evox.zip
+2025-02-22 20:31:15,324 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 135 column 5 (char 3141)
+2025-02-22 20:31:15,324 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\dazy_satsuma_amp.zip due to: Expecting property name enclosed in double quotes: line 135 column 5 (char 3141)
+2025-02-22 20:31:15,334 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: dazy_satsuma_amp
+2025-02-22 20:31:15,334 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: dazy_satsuma_amp
+2025-02-22 20:31:15,337 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 135 column 5 (char 3141)
+2025-02-22 20:31:15,337 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\dazy_satsuma_amp.zip due to: Expecting property name enclosed in double quotes: line 135 column 5 (char 3141)
+2025-02-22 20:31:15,340 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: dazy_satsuma_amp
+2025-02-22 20:31:15,340 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: dazy_satsuma_amp
+2025-02-22 20:31:17,864 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\dazy_satsuma_amp.zip as sorted.
+2025-02-22 20:31:17,864 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\dazy_satsuma_amp.zip
+2025-02-22 20:31:17,936 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Targa Top Diana
+2025-02-22 20:31:17,936 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Targa Top Diana
+2025-02-22 20:31:17,948 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Targa Top Diana
+2025-02-22 20:31:17,948 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Targa Top Diana
+2025-02-22 20:31:19,849 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\diana_targa.zip as sorted.
+2025-02-22 20:31:19,849 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\diana_targa.zip
+2025-02-22 20:31:19,850 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Diesel Autobello
+2025-02-22 20:31:19,850 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Diesel Autobello
+2025-02-22 20:31:19,852 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Diesel Autobello
+2025-02-22 20:31:19,852 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Diesel Autobello
+2025-02-22 20:31:21,631 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\diesbello.zip as sorted.
+2025-02-22 20:31:21,631 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\diesbello.zip
+2025-02-22 20:31:21,632 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Rosseti (Russian energy company)
+2025-02-22 20:31:21,632 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Rosseti (Russian energy company)
+2025-02-22 20:31:21,633 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Rosseti (Russian energy company)
+2025-02-22 20:31:21,633 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Rosseti (Russian energy company)
+2025-02-22 20:31:23,452 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_rosseti_midtruck.zip as sorted.
+2025-02-22 20:31:23,452 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_rosseti_midtruck.zip
+2025-02-22 20:31:23,490 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Russian Police Skins Pack
+2025-02-22 20:31:23,490 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Russian Police Skins Pack
+2025-02-22 20:31:23,511 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Russian Police Skins Pack
+2025-02-22 20:31:23,511 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Russian Police Skins Pack
+2025-02-22 20:31:24,434 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_russian_police_pack.zip as sorted.
+2025-02-22 20:31:24,434 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_russian_police_pack.zip
+2025-02-22 20:31:24,455 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Russian Post Skins Pack
+2025-02-22 20:31:24,455 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Russian Post Skins Pack
+2025-02-22 20:31:24,460 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Russian Post Skins Pack
+2025-02-22 20:31:24,460 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Russian Post Skins Pack
+2025-02-22 20:31:25,119 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_russian_post.zip as sorted.
+2025-02-22 20:31:25,119 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\difichenka_russian_post.zip
+2025-02-22 20:31:25,160 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: AS100 Platform
+2025-02-22 20:31:25,160 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AS100 Platform
+2025-02-22 20:31:25,170 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: AS100 Platform
+2025-02-22 20:31:25,170 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: AS100 Platform
+2025-02-22 20:31:26,327 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_as100_platform.zip as sorted.
+2025-02-22 20:31:26,328 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_as100_platform.zip
+2025-02-22 20:31:26,381 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: CS200 Platform
+2025-02-22 20:31:26,381 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CS200 Platform
+2025-02-22 20:31:26,396 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: CS200 Platform
+2025-02-22 20:31:26,396 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: CS200 Platform
+2025-02-22 20:31:26,976 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_cs200_platform.zip as sorted.
+2025-02-22 20:31:26,977 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_cs200_platform.zip
+2025-02-22 20:31:27,014 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Hestia
+2025-02-22 20:31:27,014 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Hestia
+2025-02-22 20:31:27,021 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Hestia
+2025-02-22 20:31:27,021 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Hestia
+2025-02-22 20:31:27,600 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_hestia.zip as sorted.
+2025-02-22 20:31:27,600 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_hestia.zip
+2025-02-22 20:31:27,682 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Talent
+2025-02-22 20:31:27,682 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Talent
+2025-02-22 20:31:27,719 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Talent
+2025-02-22 20:31:27,719 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Talent
+2025-02-22 20:31:28,710 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_talent.zip as sorted.
+2025-02-22 20:31:28,710 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\docroswagge_talent.zip
+2025-02-22 20:31:28,762 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Duster
+2025-02-22 20:31:28,762 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Duster
+2025-02-22 20:31:28,785 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: Duster
+2025-02-22 20:31:28,785 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: Duster
+2025-02-22 20:31:29,597 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\duster24.zip as sorted.
+2025-02-22 20:31:29,598 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\duster24.zip
+2025-02-22 20:31:29,611 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Dynamic Racetrack
+2025-02-22 20:31:29,612 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Dynamic Racetrack
+2025-02-22 20:31:29,615 - INFO - mod_analyzer.py - _check_map_mod - Map mod detected: Dynamic Racetrack
+2025-02-22 20:31:29,615 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: Dynamic Racetrack
+2025-02-22 20:31:32,035 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamicracetrack.zip as sorted.
+2025-02-22 20:31:32,035 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamicracetrack.zip
+2025-02-22 20:31:32,036 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: DynamicDyno
+2025-02-22 20:31:32,036 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: DynamicDyno
+2025-02-22 20:31:32,037 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: DynamicDyno
+2025-02-22 20:31:32,037 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: DynamicDyno
+2025-02-22 20:31:36,767 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamic_dyno.zip as sorted.
+2025-02-22 20:31:36,767 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamic_dyno.zip
+2025-02-22 20:31:36,785 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 460 column 1 (char 7221)
+2025-02-22 20:31:36,785 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamo_lj.zip due to: Expecting property name enclosed in double quotes: line 460 column 1 (char 7221)
+2025-02-22 20:31:36,787 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: dynamo_lj
+2025-02-22 20:31:36,787 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: dynamo_lj
+2025-02-22 20:31:36,792 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 460 column 1 (char 7221)
+2025-02-22 20:31:36,792 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamo_lj.zip due to: Expecting property name enclosed in double quotes: line 460 column 1 (char 7221)
+2025-02-22 20:31:36,793 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: dynamo_lj
+2025-02-22 20:31:36,793 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: dynamo_lj
+2025-02-22 20:31:56,649 - INFO - mod_sorter_app.py - mark_as_sorted - Successfully marked C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamo_lj.zip as sorted.
+2025-02-22 20:31:56,649 - INFO - mod_sorter_app.py - next_mod - Marked as sorted and moving to next mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\dynamo_lj.zip
+2025-02-22 20:31:56,667 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:31:56,668 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\e39kenemationV10.zip due to: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:31:56,671 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: e39kenemationV10
+2025-02-22 20:31:56,671 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e39kenemationV10
+2025-02-22 20:31:56,675 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:31:56,675 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\e39kenemationV10.zip due to: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:31:56,675 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: e39kenemationV10
+2025-02-22 20:31:56,675 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e39kenemationV10
+2025-02-22 20:32:03,530 - INFO - mod_sorter_app.py - move_mod - Move mod operation cancelled by user.
