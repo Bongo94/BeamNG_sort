@@ -15,6 +15,8 @@ from core.mod_info import ModInfo, ModType
 from config.app_config import AppConfig  # Import AppConfig
 from core.mod_manager import ModManager # Import ModManager
 from utils.logger import logger
+from ui.event_handlers import NextModHandler, DeleteModHandler, MoveModHandler, MoveModToFolderHandler
+
 
 class ModSorterApp(QMainWindow):
     def __init__(self):
@@ -481,63 +483,17 @@ class ModSorterApp(QMainWindow):
          self.counter_label.setText(f"Мод {current_index + 1} из {zip_files_count}")
 
     def next_mod_clicked(self):
-        logger.debug("Next mod clicked")
-        current_file_path = self.mod_manager.get_current_zip_file_path()
-        if not current_file_path:
-            logger.warning("No current file path.")
-            return
-
-        try:
-            self.mod_manager.mark_as_sorted(current_file_path, self.current_mod_info)
-            self.mod_manager.increment_index()
-            self.load_current_mod()
-        except Exception as e:
-            self._handle_error(e, "Ошибка при переходе к следующему моду")
+        handler = NextModHandler(self, self.mod_manager, self.current_mod_info)
+        handler.handle()
 
     def delete_mod_clicked(self):
-        logger.debug("Delete mod clicked")
-        current_file_path = self.mod_manager.get_current_zip_file_path()
-        if not current_file_path:
-            logger.warning("No current file path.")
-            return
-
-        try:
-            self.mod_manager.delete_mod(current_file_path)
-            QMessageBox.information(self, "Успех", f"Файл {os.path.basename(current_file_path)} удален")
-            self.load_current_mod()  # Refresh UI
-        except Exception as e:
-            self._handle_error(e, "Ошибка при удалении мода")
+        handler = DeleteModHandler(self, self.mod_manager)
+        handler.handle()
 
     def move_mod_clicked(self):
-        logger.debug("Move mod clicked")
-        current_file_path = self.mod_manager.get_current_zip_file_path()
-        if not current_file_path:
-            logger.warning("No current file path.")
-            return
-
-        dest_folder = QFileDialog.getExistingDirectory(self, "Выберите папку для перемещения")
-        if not dest_folder:
-            logger.info("Move mod operation cancelled by user.")
-            return
-
-        try:
-            type_folder = os.path.join(dest_folder, self.current_mod_info.type.value)
-            self.mod_manager.move_mod(current_file_path, type_folder)
-            QMessageBox.information(self, "Успех", f"Файл перемещен в {type_folder}")
-            self.load_current_mod()  # Refresh UI
-        except Exception as e:
-            self._handle_error(e, "Ошибка при перемещении мода")
+        handler = MoveModHandler(self, self.mod_manager, self.current_mod_info)
+        handler.handle()
 
     def move_mod_to_folder_clicked(self, folder_path):
-        logger.debug(f"Move mod to folder clicked: {folder_path}")
-        current_file_path = self.mod_manager.get_current_zip_file_path()
-        if not current_file_path:
-            logger.warning("No current file path.")
-            return
-
-        try:
-            self.mod_manager.move_mod(current_file_path, folder_path)
-            QMessageBox.information(self, "Успех", f"Файл перемещен в {folder_path}")
-            self.load_current_mod()
-        except Exception as e:
-            self._handle_error(e, f"Ошибка при перемещении мода в {folder_path}")
+        handler = MoveModToFolderHandler(self, self.mod_manager, folder_path)
+        handler.handle()
