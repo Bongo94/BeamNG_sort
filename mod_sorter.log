@@ -101,7 +101,7 @@
 Traceback (most recent call last):
   File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
     os.remove(current_file_path)
-PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\apgdesemiswappedbarstow.zip'
+PermissionError: [WinError 32] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\apgdesemiswappedbarstow.zip'
 2025-02-22 20:12:34,377 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
 2025-02-22 20:12:34,382 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
 2025-02-22 20:12:39,642 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
@@ -150,13 +150,13 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 Traceback (most recent call last):
   File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
     os.remove(current_file_path)
-PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+PermissionError: [WinError 32] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
 2025-02-22 20:13:27,726 - INFO - mod_sorter_app.py - _delete_sorted_marker - Successfully deleted .mod_sorted from C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
 2025-02-22 20:13:29,427 - ERROR - mod_sorter_app.py - delete_mod - Error deleting mod: C:/Users/aleks/PyPyGame/BeamNG_sort/test\arexped22.zip
 Traceback (most recent call last):
   File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 662, in delete_mod
     os.remove(current_file_path)
-PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+PermissionError: [WinError 32] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
 2025-02-22 20:14:16,487 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
 2025-02-22 20:14:16,494 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
 2025-02-22 20:14:20,939 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
@@ -186,7 +186,7 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 Traceback (most recent call last):
   File "C:\Users\aleks\PyPyGame\BeamNG_sort\mod_sorter_app.py", line 663, in delete_mod
     os.remove(current_file_path)
-PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
+PermissionError: [WinError 32] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: 'C:/Users/aleks/PyPyGame/BeamNG_sort/test\\arexped22.zip'
 2025-02-22 20:15:09,433 - INFO - mod_sorter_app.py - _setup_ui - UI setup complete
 2025-02-22 20:15:09,438 - INFO - mod_sorter_app.py - _setup_shortcuts - Keyboard shortcuts setup complete
 2025-02-22 20:15:11,809 - INFO - mod_sorter_app.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
@@ -839,3 +839,234 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 2025-02-22 20:31:56,675 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: e39kenemationV10
 2025-02-22 20:31:56,675 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e39kenemationV10
 2025-02-22 20:32:03,530 - INFO - mod_sorter_app.py - move_mod - Move mod operation cancelled by user.
+2025-02-22 20:58:04,533 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: True
+2025-02-22 20:58:04,561 - INFO - main_window.py - _setup_ui - UI setup complete
+2025-02-22 20:58:04,562 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:58:07,571 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:58:07,572 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 20:58:07,573 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 1930sengineswap.zip
+2025-02-22 20:58:07,577 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 2K-Tsukuba.zip
+2025-02-22 20:58:07,582 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 3axlecitybus.zip
+2025-02-22 20:58:07,582 - INFO - main_window.py - load_current_mod - Skipping sorted mod: adaptive_s_suspension_miata_lover.zip
+2025-02-22 20:58:07,588 - INFO - main_window.py - load_current_mod - Skipping sorted mod: american_island.zip
+2025-02-22 20:58:07,589 - INFO - main_window.py - load_current_mod - Skipping sorted mod: angrycheesewedge.zip
+2025-02-22 20:58:07,590 - INFO - main_window.py - load_current_mod - Skipping sorted mod: ARaz1.zip
+2025-02-22 20:58:07,610 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arctic_circle.zip
+2025-02-22 20:58:07,612 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arexplorer20.zip
+2025-02-22 20:58:07,620 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arianna_island.zip
+2025-02-22 20:58:07,621 - INFO - main_window.py - load_current_mod - Skipping sorted mod: armored_stambecco.zip
+2025-02-22 20:58:07,624 - INFO - main_window.py - load_current_mod - Skipping sorted mod: audi-s8 (1).zip
+2025-02-22 20:58:07,626 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Audi80b3ver1.5.zip
+2025-02-22 20:58:07,627 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AudiA4 by hxmxnn.zip
+2025-02-22 20:58:07,629 - INFO - main_window.py - load_current_mod - Skipping sorted mod: audia4b9kenemationV2.zip
+2025-02-22 20:58:07,631 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AudiRSEtronGT_RELEASE.zip
+2025-02-22 20:58:07,633 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Audi_RS6.zip
+2025-02-22 20:58:07,635 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AUDI_RS7_v1.1_Kenemation.zip
+2025-02-22 20:58:07,636 - INFO - main_window.py - load_current_mod - Skipping sorted mod: aurata_rotary.zip
+2025-02-22 20:58:07,637 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Autobello_cab.zip
+2025-02-22 20:58:07,638 - INFO - main_window.py - load_current_mod - Skipping sorted mod: autobello_minilena.zip
+2025-02-22 20:58:07,639 - INFO - main_window.py - load_current_mod - Skipping sorted mod: awbete_adamplg.zip
+2025-02-22 20:58:07,642 - INFO - main_window.py - load_current_mod - Skipping sorted mod: axle_valley.zip
+2025-02-22 20:58:07,642 - INFO - main_window.py - load_current_mod - Skipping sorted mod: basegame_offroad_compat.zip
+2025-02-22 20:58:07,643 - INFO - main_window.py - load_current_mod - Skipping sorted mod: base_models_neeko.zip
+2025-02-22 20:58:07,644 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bastion_diesel_v6.zip
+2025-02-22 20:58:07,646 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsBMWE38.zip
+2025-02-22 20:58:07,647 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsMulsanne16.zip
+2025-02-22 20:58:07,650 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsTransitMk7.zip
+2025-02-22 20:58:07,652 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsW201.zip
+2025-02-22 20:58:07,654 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsW907.zip
+2025-02-22 20:58:07,654 - INFO - main_window.py - load_current_mod - Skipping sorted mod: beamregenerator.zip
+2025-02-22 20:58:07,654 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bella_doodlebug.zip
+2025-02-22 20:58:07,655 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BetterPerformanceTimer.zip
+2025-02-22 20:58:07,655 - INFO - main_window.py - load_current_mod - Skipping sorted mod: big_rig_upgrade.zip
+2025-02-22 20:58:07,656 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bluebuck_convertible.zip
+2025-02-22 20:58:07,657 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BMW7G11_Revamped.zip
+2025-02-22 20:58:07,660 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmwe36_revamp_adamplg.zip
+2025-02-22 20:58:07,662 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmwm5f10v2fix.zip
+2025-02-22 20:58:07,665 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmw_serie5_e34_matissator_improved.zip
+2025-02-22 20:58:07,666 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bngtunerkijangkf10v1300824.zip
+2025-02-22 20:58:07,668 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BNR33.zip
+2025-02-22 20:58:07,668 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BolidewithDiesel.zip
+2025-02-22 20:58:07,673 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bongo_agenty_global_values_tuning.zip
+2025-02-22 20:58:07,674 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bubuflattopwaboll.zip
+2025-02-22 20:58:07,675 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burg_w202edit.zip
+2025-02-22 20:58:07,676 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burnsidewindsor (1).zip
+2025-02-22 20:58:07,677 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burnside_diesel.zip
+2025-02-22 20:58:07,678 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BX_Ute_Gavril_Huntsman.zip
+2025-02-22 20:58:07,697 - INFO - main_window.py - load_current_mod - Skipping sorted mod: canyon rush.zip
+2025-02-22 20:58:07,698 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cap.zip
+2025-02-22 20:58:07,699 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cayenne957kenemation.zip
+2025-02-22 20:58:07,701 - INFO - main_window.py - load_current_mod - Skipping sorted mod: challengerkenemationV2.zip
+2025-02-22 20:58:07,703 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cnsize.zip
+2025-02-22 20:58:07,703 - INFO - main_window.py - load_current_mod - Skipping sorted mod: CNVY_Hopper_Offroad_Parts_V6.zip
+2025-02-22 20:58:07,715 - INFO - main_window.py - load_current_mod - Skipping sorted mod: commander.zip
+2025-02-22 20:58:07,734 - INFO - main_window.py - load_current_mod - Skipping sorted mod: configpack_KLJP.zip
+2025-02-22 20:58:07,750 - INFO - main_window.py - load_current_mod - Skipping sorted mod: coremod_KLJP.zip
+2025-02-22 20:58:07,764 - INFO - main_window.py - load_current_mod - Skipping sorted mod: covupdutchyv101.zip
+2025-02-22 20:58:07,777 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cxseven.zip
+2025-02-22 20:58:07,792 - INFO - main_window.py - load_current_mod - Skipping sorted mod: darkie_evox.zip
+2025-02-22 20:58:07,805 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dazy_satsuma_amp.zip
+2025-02-22 20:58:07,816 - INFO - main_window.py - load_current_mod - Skipping sorted mod: diana_targa.zip
+2025-02-22 20:58:07,817 - INFO - main_window.py - load_current_mod - Skipping sorted mod: diesbello.zip
+2025-02-22 20:58:07,817 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_rosseti_midtruck.zip
+2025-02-22 20:58:07,829 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_russian_police_pack.zip
+2025-02-22 20:58:07,844 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_russian_post.zip
+2025-02-22 20:58:07,862 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_as100_platform.zip
+2025-02-22 20:58:07,876 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_cs200_platform.zip
+2025-02-22 20:58:07,890 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_hestia.zip
+2025-02-22 20:58:07,901 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_talent.zip
+2025-02-22 20:58:07,913 - INFO - main_window.py - load_current_mod - Skipping sorted mod: duster24.zip
+2025-02-22 20:58:07,924 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamicracetrack.zip
+2025-02-22 20:58:07,924 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamic_dyno.zip
+2025-02-22 20:58:07,936 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamo_lj.zip
+2025-02-22 20:58:07,942 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:58:07,942 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\e39kenemationV10.zip due to: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:58:07,943 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: e39kenemationV10
+2025-02-22 20:58:07,943 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e39kenemationV10
+2025-02-22 20:58:07,946 - WARNING - mod_analyzer.py - _check_vehicle_mod - JSONDecodeError in _check_vehicle_mod: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:58:07,946 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\e39kenemationV10.zip due to: Expecting property name enclosed in double quotes: line 253 column 3 (char 4784)
+2025-02-22 20:58:07,947 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: e39kenemationV10
+2025-02-22 20:58:07,947 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: e39kenemationV10
+2025-02-22 20:58:30,382 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: True
+2025-02-22 20:58:30,405 - INFO - main_window.py - _setup_ui - UI setup complete
+2025-02-22 20:58:30,406 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:58:33,505 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/mod_sorter
+2025-02-22 20:58:33,505 - INFO - mod_manager.py - __init__ - ModManager initialized, found 0 zip files.
+2025-02-22 20:58:34,671 - INFO - main_window.py - load_current_mod - All files processed, exiting.
+2025-02-22 20:58:39,301 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: False
+2025-02-22 20:58:39,323 - INFO - main_window.py - _setup_ui - UI setup complete
+2025-02-22 20:58:39,323 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 20:58:42,295 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 20:58:42,296 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 20:58:51,104 - INFO - main_window.py - move_mod - Move mod operation cancelled by user.
+2025-02-22 21:14:51,043 - WARNING - main_window.py - _load_move_folders_config - Config file not found: config/move_folders.json. Using default config.
+2025-02-22 21:14:52,341 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: True
+2025-02-22 21:14:52,366 - WARNING - main_window.py - _create_dynamic_buttons - No move folders configured.
+2025-02-22 21:14:52,368 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 21:14:55,354 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 21:14:55,355 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 21:14:55,357 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 1930sengineswap.zip
+2025-02-22 21:14:55,362 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 2K-Tsukuba.zip
+2025-02-22 21:14:55,366 - INFO - main_window.py - load_current_mod - Skipping sorted mod: 3axlecitybus.zip
+2025-02-22 21:14:55,367 - INFO - main_window.py - load_current_mod - Skipping sorted mod: adaptive_s_suspension_miata_lover.zip
+2025-02-22 21:14:55,373 - INFO - main_window.py - load_current_mod - Skipping sorted mod: american_island.zip
+2025-02-22 21:14:55,374 - INFO - main_window.py - load_current_mod - Skipping sorted mod: angrycheesewedge.zip
+2025-02-22 21:14:55,375 - INFO - main_window.py - load_current_mod - Skipping sorted mod: ARaz1.zip
+2025-02-22 21:14:55,397 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arctic_circle.zip
+2025-02-22 21:14:55,399 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arexplorer20.zip
+2025-02-22 21:14:55,407 - INFO - main_window.py - load_current_mod - Skipping sorted mod: arianna_island.zip
+2025-02-22 21:14:55,408 - INFO - main_window.py - load_current_mod - Skipping sorted mod: armored_stambecco.zip
+2025-02-22 21:14:55,411 - INFO - main_window.py - load_current_mod - Skipping sorted mod: audi-s8 (1).zip
+2025-02-22 21:14:55,413 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Audi80b3ver1.5.zip
+2025-02-22 21:14:55,414 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AudiA4 by hxmxnn.zip
+2025-02-22 21:14:55,416 - INFO - main_window.py - load_current_mod - Skipping sorted mod: audia4b9kenemationV2.zip
+2025-02-22 21:14:55,419 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AudiRSEtronGT_RELEASE.zip
+2025-02-22 21:14:55,421 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Audi_RS6.zip
+2025-02-22 21:14:55,424 - INFO - main_window.py - load_current_mod - Skipping sorted mod: AUDI_RS7_v1.1_Kenemation.zip
+2025-02-22 21:14:55,425 - INFO - main_window.py - load_current_mod - Skipping sorted mod: aurata_rotary.zip
+2025-02-22 21:14:55,425 - INFO - main_window.py - load_current_mod - Skipping sorted mod: Autobello_cab.zip
+2025-02-22 21:14:55,427 - INFO - main_window.py - load_current_mod - Skipping sorted mod: autobello_minilena.zip
+2025-02-22 21:14:55,429 - INFO - main_window.py - load_current_mod - Skipping sorted mod: awbete_adamplg.zip
+2025-02-22 21:14:55,431 - INFO - main_window.py - load_current_mod - Skipping sorted mod: axle_valley.zip
+2025-02-22 21:14:55,431 - INFO - main_window.py - load_current_mod - Skipping sorted mod: basegame_offroad_compat.zip
+2025-02-22 21:14:55,432 - INFO - main_window.py - load_current_mod - Skipping sorted mod: base_models_neeko.zip
+2025-02-22 21:14:55,433 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bastion_diesel_v6.zip
+2025-02-22 21:14:55,435 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsBMWE38.zip
+2025-02-22 21:14:55,437 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsMulsanne16.zip
+2025-02-22 21:14:55,439 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsTransitMk7.zip
+2025-02-22 21:14:55,441 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsW201.zip
+2025-02-22 21:14:55,443 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BBModsW907.zip
+2025-02-22 21:14:55,444 - INFO - main_window.py - load_current_mod - Skipping sorted mod: beamregenerator.zip
+2025-02-22 21:14:55,444 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bella_doodlebug.zip
+2025-02-22 21:14:55,444 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BetterPerformanceTimer.zip
+2025-02-22 21:14:55,445 - INFO - main_window.py - load_current_mod - Skipping sorted mod: big_rig_upgrade.zip
+2025-02-22 21:14:55,445 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bluebuck_convertible.zip
+2025-02-22 21:14:55,447 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BMW7G11_Revamped.zip
+2025-02-22 21:14:55,450 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmwe36_revamp_adamplg.zip
+2025-02-22 21:14:55,452 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmwm5f10v2fix.zip
+2025-02-22 21:14:55,456 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bmw_serie5_e34_matissator_improved.zip
+2025-02-22 21:14:55,458 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bngtunerkijangkf10v1300824.zip
+2025-02-22 21:14:55,460 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BNR33.zip
+2025-02-22 21:14:55,460 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BolidewithDiesel.zip
+2025-02-22 21:14:55,466 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bongo_agenty_global_values_tuning.zip
+2025-02-22 21:14:55,466 - INFO - main_window.py - load_current_mod - Skipping sorted mod: bubuflattopwaboll.zip
+2025-02-22 21:14:55,468 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burg_w202edit.zip
+2025-02-22 21:14:55,469 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burnsidewindsor (1).zip
+2025-02-22 21:14:55,470 - INFO - main_window.py - load_current_mod - Skipping sorted mod: burnside_diesel.zip
+2025-02-22 21:14:55,471 - INFO - main_window.py - load_current_mod - Skipping sorted mod: BX_Ute_Gavril_Huntsman.zip
+2025-02-22 21:14:55,492 - INFO - main_window.py - load_current_mod - Skipping sorted mod: canyon rush.zip
+2025-02-22 21:14:55,493 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cap.zip
+2025-02-22 21:14:55,494 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cayenne957kenemation.zip
+2025-02-22 21:14:55,496 - INFO - main_window.py - load_current_mod - Skipping sorted mod: challengerkenemationV2.zip
+2025-02-22 21:14:55,497 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cnsize.zip
+2025-02-22 21:14:55,498 - INFO - main_window.py - load_current_mod - Skipping sorted mod: CNVY_Hopper_Offroad_Parts_V6.zip
+2025-02-22 21:14:55,498 - INFO - main_window.py - load_current_mod - Skipping sorted mod: commander.zip
+2025-02-22 21:14:55,509 - INFO - main_window.py - load_current_mod - Skipping sorted mod: configpack_KLJP.zip
+2025-02-22 21:14:55,513 - INFO - main_window.py - load_current_mod - Skipping sorted mod: coremod_KLJP.zip
+2025-02-22 21:14:55,514 - INFO - main_window.py - load_current_mod - Skipping sorted mod: covupdutchyv101.zip
+2025-02-22 21:14:55,515 - INFO - main_window.py - load_current_mod - Skipping sorted mod: cxseven.zip
+2025-02-22 21:14:55,517 - INFO - main_window.py - load_current_mod - Skipping sorted mod: darkie_evox.zip
+2025-02-22 21:14:55,519 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dazy_satsuma_amp.zip
+2025-02-22 21:14:55,520 - INFO - main_window.py - load_current_mod - Skipping sorted mod: diana_targa.zip
+2025-02-22 21:14:55,520 - INFO - main_window.py - load_current_mod - Skipping sorted mod: diesbello.zip
+2025-02-22 21:14:55,520 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_rosseti_midtruck.zip
+2025-02-22 21:14:55,522 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_russian_police_pack.zip
+2025-02-22 21:14:55,523 - INFO - main_window.py - load_current_mod - Skipping sorted mod: difichenka_russian_post.zip
+2025-02-22 21:14:55,525 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_as100_platform.zip
+2025-02-22 21:14:55,528 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_cs200_platform.zip
+2025-02-22 21:14:55,530 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_hestia.zip
+2025-02-22 21:14:55,532 - INFO - main_window.py - load_current_mod - Skipping sorted mod: docroswagge_talent.zip
+2025-02-22 21:14:55,534 - INFO - main_window.py - load_current_mod - Skipping sorted mod: duster24.zip
+2025-02-22 21:14:55,536 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamicracetrack.zip
+2025-02-22 21:14:55,536 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamic_dyno.zip
+2025-02-22 21:14:55,539 - INFO - main_window.py - load_current_mod - Skipping sorted mod: dynamo_lj.zip
+2025-02-22 21:14:55,543 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\e39kenemationV10.zip: No module named 'mod_analyzer'
+2025-02-22 21:14:55,543 - WARNING - main_window.py - load_current_mod - Could not load mod info for e39kenemationV10.zip
+2025-02-22 21:18:42,232 - WARNING - main_window.py - _load_move_folders_config - Config file not found: config/move_folders.json. Using default config.
+2025-02-22 21:18:44,476 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: False
+2025-02-22 21:18:44,498 - WARNING - main_window.py - _create_dynamic_buttons - No move folders configured.
+2025-02-22 21:18:44,499 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 21:18:47,549 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 21:18:47,549 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 21:20:33,363 - WARNING - main_window.py - _load_move_folders_config - Config file not found: config/move_folders.json. Using default config.
+2025-02-22 21:20:34,600 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: False
+2025-02-22 21:20:34,626 - WARNING - main_window.py - _create_dynamic_buttons - No move folders configured.
+2025-02-22 21:20:34,627 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 21:20:37,299 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 21:20:37,300 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 21:20:37,314 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:37,314 - WARNING - main_window.py - load_current_mod - Could not load mod info for 1930sengineswap.zip
+2025-02-22 21:20:44,639 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 21:20:44,656 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:44,656 - WARNING - main_window.py - load_current_mod - Could not load mod info for 2K-Tsukuba.zip
+2025-02-22 21:20:45,887 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 21:20:45,903 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:45,903 - WARNING - main_window.py - load_current_mod - Could not load mod info for 3axlecitybus.zip
+2025-02-22 21:20:47,731 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 21:20:47,745 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:47,745 - WARNING - main_window.py - load_current_mod - Could not load mod info for adaptive_s_suspension_miata_lover.zip
+2025-02-22 21:20:48,872 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\adaptive_s_suspension_miata_lover.zip is already marked as sorted.
+2025-02-22 21:20:48,890 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:48,890 - WARNING - main_window.py - load_current_mod - Could not load mod info for american_island.zip
+2025-02-22 21:20:49,900 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\american_island.zip is already marked as sorted.
+2025-02-22 21:20:49,911 - ERROR - mod_manager.py - get_current_mod_info - Error analyzing C:/Users/aleks/PyPyGame/BeamNG_sort/test\angrycheesewedge.zip: No module named 'mod_analyzer'
+2025-02-22 21:20:49,911 - WARNING - main_window.py - load_current_mod - Could not load mod info for angrycheesewedge.zip
+2025-02-22 21:22:33,506 - WARNING - main_window.py - _load_move_folders_config - Config file not found: config/move_folders.json. Using default config.
+2025-02-22 21:22:34,628 - INFO - main_window.py - _ask_skip_sorted - User chose to skip sorted mods: False
+2025-02-22 21:22:34,661 - WARNING - main_window.py - _create_dynamic_buttons - No move folders configured.
+2025-02-22 21:22:34,663 - INFO - main_window.py - _setup_shortcuts - Keyboard shortcuts setup complete
+2025-02-22 21:22:37,066 - INFO - main_window.py - select_source_folder - Source folder selected: C:/Users/aleks/PyPyGame/BeamNG_sort/test
+2025-02-22 21:22:37,067 - INFO - mod_manager.py - __init__ - ModManager initialized, found 381 zip files.
+2025-02-22 21:22:37,075 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: Bruckell Nine Semi Diesel Mod
+2025-02-22 21:22:37,075 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: Bruckell Nine Semi Diesel Mod
+2025-02-22 21:22:55,473 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\1930sengineswap.zip is already marked as sorted.
+2025-02-22 21:22:55,482 - WARNING - mod_analyzer.py - _check_map_mod - JSONDecodeError in _check_map_mod: Expecting ',' delimiter: line 7 column 9 (char 215)
+2025-02-22 21:22:55,482 - ERROR - mod_analyzer.py - _create_fallback_mod_info - Creating fallback ModInfo for C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip due to: Expecting ',' delimiter: line 7 column 9 (char 215)
+2025-02-22 21:22:55,490 - INFO - mod_analyzer.py - _create_fallback_mod_info - Created fallback mod info: 2K-Tsukuba
+2025-02-22 21:22:55,490 - INFO - mod_analyzer.py - analyze_zip - Detected map mod: 2K-Tsukuba
+2025-02-22 21:22:58,038 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\2K-Tsukuba.zip is already marked as sorted.
+2025-02-22 21:22:58,138 - INFO - mod_analyzer.py - _check_vehicle_mod - Vehicle mod detected: DT45L
+2025-02-22 21:22:58,138 - INFO - mod_analyzer.py - analyze_zip - Detected vehicle mod: DT45L
+2025-02-22 21:23:01,604 - INFO - mod_manager.py - mark_as_sorted - C:/Users/aleks/PyPyGame/BeamNG_sort/test\3axlecitybus.zip is already marked as sorted.
+2025-02-22 21:23:01,608 - INFO - mod_analyzer.py - _create_other_mod_info - Created 'other' mod info: SUV Adaptive S suspension
+2025-02-22 21:23:01,608 - INFO - mod_analyzer.py - analyze_zip - Detected other mod: SUV Adaptive S suspension

@@ -1,6 +1,6 @@
-# mod_info.py
+# mod_sorter/core/mod_info.py
 from dataclasses import dataclass
-from typing import Optional, List, Dict, Tuple
+from typing import List, Dict, Tuple
 from enum import Enum
 
 
@@ -16,5 +16,5 @@ class ModInfo:
     author: str
     type: ModType
     description: str
-    preview_images: List[Tuple[str, bytes]]  # (image_name, image_data)
+    preview_images: List[Tuple[str, bytes]]
     additional_info: Dict

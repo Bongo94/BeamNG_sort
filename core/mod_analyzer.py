@@ -3,7 +3,7 @@ import zipfile
 import json
 import os
 from typing import Optional, List, Dict
-from mod_info import ModInfo, ModType  # Импорт из mod_info.py
+from core.mod_info import ModInfo, ModType  # Импорт из mod_info.py
 from utils.logger import logger  # Импортируем логгер
 
 class ModAnalyzer:
