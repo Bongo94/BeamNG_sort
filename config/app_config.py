@@ -10,3 +10,4 @@ class AppConfig:
     IMAGE_DISPLAY_HEIGHT = 400
     MARKER_EXTENSION = ".mod_sorted"
     MOVE_FOLDERS_CONFIG = "config/move_folders.json"
+    CACHE_FILE_PATH = 'mod_cache.json'
