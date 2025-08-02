@@ -1,67 +1,67 @@
 ## BeamNG Mod Sorter
 
-This application helps you sort your BeamNG.drive mods more efficiently. It analyzes `.zip` files, extracts key information, displays previews, and allows you to categorize mods into different folders.
+This application helps you sort your BeamNG.drive mods more efficiently. It analyzes `.zip` files, extracts key information, displays previews, and allows you to categorize and manage your mods.
 
 **Key Features:**
 
-*   **Automated Mod Analysis:**  Identifies the type of mod (vehicle, map, or other) by analyzing the contents of `.zip` files, extracting information from `info.json` files within.
-*   **Automatic Folder Detection:** Automatically finds your BeamNG.drive `mods` folder on startup.
-*   **Preview Display:** Shows images and previews from inside the mod archives, helping you quickly identify the mod.
-*   **Categorization:**  Allows you to easily move mods into type-specific folders (Vehicles, Maps, etc.).
-*   **Sorting Markers:**  Marks sorted mods with a `.mod_sorted` file *inside* the zip archive, making it easy to skip already-processed files.
-*   **Search & Filter:**  Quickly find specific mods by name or filter by mod type.
-*   **Keyboard Shortcuts:** Navigate and perform actions quickly using keyboard shortcuts.
-*   **Logging:** Comprehensive logging to a file, helping with debugging and troubleshooting.
+*   **Automated Mod Analysis:** Identifies the type of mod (vehicle, map, or other) by analyzing the contents of `.zip` files and their internal `info.json` files.
+*   **Automatic Folder Detection:** On first launch, it automatically finds your BeamNG.drive `mods` folder, simplifying setup.
+*   **Image Previews:** Shows preview images from inside the mod archives, helping you quickly identify each mod.
+*   **Easy Categorization:** Allows you to move mods into predefined folders with a single click.
+*   **Sorting Markers:** Marks processed mods with a `.mod_sorted` file *inside* the zip archive, making it easy to skip already-sorted files in future sessions.
+*   **Search & Filter:** Quickly find specific mods by name or filter the list by mod type.
+*   **Comprehensive Logging:** Keeps a detailed log file for troubleshooting and debugging.
+*   **Keyboard Shortcuts:** Navigate and perform all major actions quickly using keyboard shortcuts for maximum efficiency.
 
 **Installation:**
 
 1.  **Download:** Download the latest executable (`.exe`) from the [Releases](https://github.com/Bongo94/BeamNG_sort/releases) page.
-2.  **Run:** Execute the downloaded `.exe` file.
+2.  **Run:** Execute the downloaded `.exe` file. No installation is required.
 
 **Usage:**
 
-1.  **Select Mod Folder:** The application will prompt you to select the folder containing your BeamNG.drive mod `.zip` files.
-2.  **Review Mod Information:** The application will display the mod's name, author, type, description, and previews.
-3.  **Categorize or Delete:** Use the buttons at the bottom to:
-    *   **Keep:**  Marks the mod as sorted and proceeds to the next mod.
-    *   **Delete:** Deletes the mod `.zip` file.
-    *   **Move:** Moves the mod to a folder corresponding to its type (Vehicle, Map, Other). You will be prompted to choose a destination folder.
-4.  **Navigation:** Use the arrow keys or the navigation buttons to view different images if available.
-5.  **Search and Filter:** Use the search bar to filter mods by name. Use the filter dropdown to filter by mod type.
+1.  **Select Mod Folder:** The application will try to find your mods folder automatically. If it succeeds, confirm the path. Otherwise, you will be prompted to select the folder containing your BeamNG.drive mod `.zip` files.
+2.  **Review Mod Information:** The application displays the mod's name, author, type, description, and any available previews.
+3.  **Take Action:** Use the buttons at the bottom to manage the current mod:
+    *   **Previous:** Go back to the previous mod.
+    *   **Skip:** Go to the next mod without taking any action.
+    *   **Keep & Next:** Marks the mod as sorted and proceeds to the next one.
+    *   **Delete:** Permanently deletes the mod `.zip` file (with confirmation).
+    *   **Move:** Opens a dialog to choose a custom destination folder.
+    *   **Move to...:** Use the one-click buttons to move the mod to a predefined folder (configurable in `config/move_folders.json`).
+4.  **Navigate Images:** Use the Left and Right arrow keys to cycle through available preview images.
 
 **Keyboard Shortcuts:**
 
-*   **Ctrl+K:** Keep (mark as sorted and go to next mod)
-*   **Ctrl+D:** Delete
-*   **Ctrl+M:** Move
+*   **Ctrl+B:** Previous Mod
+*   **Ctrl+S:** Skip Mod
+*   **Ctrl+K:** Keep & Next (mark as sorted)
+*   **Ctrl+D:** Delete Mod
+*   **Ctrl+M:** Move Mod (to a custom folder)
 *   **Left Arrow:** Previous Image
 *   **Right Arrow:** Next Image
 
 **Configuration:**
 
-*   **Skip Sorted Mods:** At startup, you will be asked if you want to skip already sorted mods. This option can also be configured via the command line (Not Yet Implemented).
+*   **Skip Sorted Mods:** At startup, you will be asked if you want to skip mods that have been marked as sorted.
+*   **Custom Move Folders:** You can customize the "Move to..." buttons by editing the `config/move_folders.json` file before building the application from source.
 
 **Building from Source:**
 
 If you prefer to build the application from source:
 
 1.  **Clone the Repository:**
-
     ```bash
     git clone https://github.com/Bongo94/BeamNG_sort.git
-    cd YOUR_REPO_NAME
+    cd BeamNG_sort
     ```
 
 2.  **Install Dependencies:**
-
     ```bash
     pip install -r requirements.txt
     ```
 
-    (You will need a `requirements.txt` file listing dependencies like PyQt6)
-
 3.  **Run the Application:**
-
     ```bash
     python main.py
     ```
@@ -69,22 +69,15 @@ If you prefer to build the application from source:
 **Dependencies:**
 
 *   [PyQt6](https://www.riverbankcomputing.com/software/pyqt/intro)
-*   [dataclasses](https://docs.python.org/3/library/dataclasses.html) (Standard in Python 3.7+)
-*   [typing](https://docs.python.org/3/library/typing.html) (Standard in Python 3.5+)
-*   [zipfile](https://docs.python.org/3/library/zipfile.html) (Standard Python Library)
-*   [json](https://docs.python.org/3/library/json.html) (Standard Python Library)
-*   [os](https://docs.python.org/3/library/os.html) (Standard Python Library)
-*   [shutil](https://docs.python.org/3/library/shutil.html) (Standard Python Library)
-*   [logging](https://docs.python.org/3/library/logging.html) (Standard Python Library)
+*   [colorlog](https://pypi.org/project/colorlog/) (for colored console logging)
+*   [packaging](https://pypi.org/project/packaging/) (for version comparison)
 
 **Planned Features:**
 
-*   **Custom Destination Folders:** Allow users to configure the destination folders for each mod type.
-*   **More Robust Error Handling:** Improve error reporting and handling for corrupted or malformed mod archives.
-*   **Command-Line Arguments:** Support command-line arguments for configuration options, such as skipping sorted mods.
-*   **UI Improvements:** Enhancements to the user interface for better usability and visual appeal.
-*   **Multi-language Support:** Allow users to select their language preferences.
-*   **Online Database Integration:** Potentially integrate with an online mod database to fetch more detailed mod information.
+*   **Runtime Folder Configuration:** Allow users to configure the destination folders for each mod type directly within the app.
+*   **Command-Line Arguments:** Support for CLI arguments, e.g., to force skipping sorted mods.
+*   **UI/UX Improvements:** General enhancements to the user interface.
+*   **Multi-language Support:** Add localization for different languages.
 
 **Contributing:**
 
@@ -96,78 +89,74 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Important Considerations:**
 
-*   **Backup:** Always back up your mods folder before using this or any mod management tool.
-*   **Invalid Mods:** This tool is designed to help sort valid mods.  It may not be able to handle all types of corrupted or unusual mod archives.
-*   **.mod_sorted files:** Do NOT manually edit or delete these files!  The tool relies on their presence and contents for proper operation.
+*   **Backup:** **Always back up your mods folder before using this or any other mod management tool.**
+*   **Invalid Mods:** This tool is designed to help sort valid mods. While it attempts to handle malformed archives, it may not succeed with all types of corrupted files.
+*   **`.mod_sorted` files:** Do NOT manually edit or delete these files from inside the archives. The tool relies on them for its sorting logic.
 
-```
-PyQt6
-```
-
-
+---
 --- RU ---
 ## BeamNG Mod Sorter
 
-Это приложение поможет вам более эффективно сортировать ваши моды для BeamNG.drive. Оно анализирует `.zip` файлы, извлекает ключевую информацию, показывает превью и позволяет вам классифицировать моды по различным папкам.
+Это приложение поможет вам более эффективно сортировать ваши моды для BeamNG.drive. Оно анализирует `.zip` файлы, извлекает ключевую информацию, показывает превью и позволяет вам классифицировать и управлять вашими модами.
 
 **Основные возможности:**
 
-*   **Автоматический анализ модов:** Определяет тип мода (транспортное средство, карта или другое) путем анализа содержимого `.zip` файлов, извлекая информацию из `info.json` файлов внутри.
-*   **Автоматическое определение папки:** При запуске приложение автоматически находит вашу папку `mods` для BeamNG.drive.
-*   **Отображение превью:** Показывает изображения и превью изнутри архивов модов, помогая вам быстро идентифицировать мод.
-*   **Категоризация:** Позволяет вам легко перемещать моды в папки, соответствующие их типу (Vehicles, Maps и т.д.).
-*   **Маркеры сортировки:** Отмечает отсортированные моды файлом `.mod_sorted` *внутри* zip-архива, что позволяет легко пропускать уже обработанные файлы.
-*   **Поиск и фильтрация:** Быстрый поиск определенных модов по имени или фильтрация по типу мода.
-*   **Горячие клавиши:** Навигация и выполнение действий с помощью горячих клавиш.
-*   **Логирование:** Подробное ведение журнала в файл, помогающее при отладке и устранении неполадок.
+*   **Автоматический анализ модов:** Определяет тип мода (транспортное средство, карта или другое) путем анализа содержимого `.zip` файлов и их внутренних файлов `info.json`.
+*   **Автоматическое определение папки:** При первом запуске приложение автоматически находит вашу папку `mods` для BeamNG.drive, упрощая настройку.
+*   **Просмотр изображений:** Показывает изображения-превью изнутри архивов модов, помогая вам быстро идентифицировать каждый мод.
+*   **Простая категоризация:** Позволяет перемещать моды в предопределенные папки одним щелчком мыши.
+*   **Маркеры сортировки:** Отмечает обработанные моды файлом `.mod_sorted` *внутри* zip-архива, что позволяет легко пропускать уже отсортированные файлы в будущих сессиях.
+*   **Поиск и фильтрация:** Быстрый поиск определенных модов по имени или фильтрация списка по типу мода.
+*   **Подробное логирование:** Ведет детальный лог-файл для отладки и устранения неполадок.
+*   **Горячие клавиши:** Навигация и выполнение всех основных действий с помощью горячих клавиш для максимальной эффективности.
 
 **Установка:**
 
 1.  **Скачать:** Скачайте последнюю версию исполняемого файла (`.exe`) со страницы [Releases](https://github.com/Bongo94/BeamNG_sort/releases).
-2.  **Запустить:** Запустите скачанный `.exe` файл.
+2.  **Запустить:** Запустите скачанный `.exe` файл. Установка не требуется.
 
 **Использование:**
 
-1.  **Выберите папку с модами:** Приложение предложит вам выбрать папку, содержащую ваши `.zip` файлы с модами BeamNG.drive.
-2.  **Просмотрите информацию о моде:** Приложение отобразит имя мода, автора, тип, описание и превью.
-3.  **Категоризируйте или удалите:** Используйте кнопки внизу, чтобы:
-    *   **Оставить:** Отмечает мод как отсортированный и переходит к следующему моду.
-    *   **Удалить:** Удаляет `.zip` файл мода.
-    *   **Переместить:** Перемещает мод в папку, соответствующую его типу (Vehicle, Map, Other). Вам будет предложено выбрать целевую папку.
-4.  **Навигация:** Используйте клавиши со стрелками или кнопки навигации для просмотра разных изображений, если они доступны.
-5.  **Поиск и фильтрация:** Используйте строку поиска для фильтрации модов по имени. Используйте выпадающий список фильтров для фильтрации по типу мода.
+1.  **Выберите папку с модами:** Приложение попытается найти вашу папку с модами автоматически. Если это удастся, подтвердите путь. В противном случае вам будет предложено выбрать папку с вашими `.zip` файлами модов для BeamNG.drive.
+2.  **Просмотрите информацию о моде:** Приложение отобразит имя мода, автора, тип, описание и все доступные превью.
+3.  **Выполните действие:** Используйте кнопки внизу для управления текущим модом:
+    *   **Previous:** Вернуться к предыдущему моду.
+    *   **Skip:** Перейти к следующему моду, не выполняя никаких действий.
+    *   **Keep & Next:** Отмечает мод как отсортированный и переходит к следующему.
+    *   **Delete:** Безвозвратно удаляет `.zip` файл мода (с подтверждением).
+    *   **Move:** Открывает диалог для выбора произвольной папки назначения.
+    *   **Move to...:** Используйте кнопки быстрого доступа для перемещения мода в предопределенную папку (настраивается в `config/move_folders.json`).
+4.  **Навигация по изображениям:** Используйте клавиши со стрелками Влево и Вправо для переключения между доступными изображениями-превью.
 
 **Горячие клавиши:**
 
-*   **Ctrl+K:** Оставить (отметить как отсортированный и перейти к следующему моду)
-*   **Ctrl+D:** Удалить
-*   **Ctrl+M:** Переместить
+*   **Ctrl+B:** Предыдущий мод
+*   **Ctrl+S:** Пропустить мод
+*   **Ctrl+K:** Оставить и к следующему (отметить как отсортированный)
+*   **Ctrl+D:** Удалить мод
+*   **Ctrl+M:** Переместить мод (в произвольную папку)
 *   **Стрелка влево:** Предыдущее изображение
 *   **Стрелка вправо:** Следующее изображение
 
 **Настройка:**
 
-*   **Пропускать отсортированные моды:** При запуске вам будет предложено указать, хотите ли вы пропускать уже отсортированные моды. Эту опцию также можно настроить с помощью аргументов командной строки (пока не реализовано).
+*   **Пропускать отсортированные моды:** При запуске вам будет предложено, хотите ли вы пропускать моды, которые уже были отмечены как отсортированные.
+*   **Пользовательские папки для перемещения:** Вы можете настроить кнопки "Move to...", отредактировав файл `config/move_folders.json` перед сборкой приложения из исходного кода.
 
 **Сборка из исходного кода:**
 
-Если вы предпочитаете собрать приложение из исходного кода:
-
 1.  **Клонируйте репозиторий:**
-
     ```bash
     git clone https://github.com/Bongo94/BeamNG_sort.git
-    cd YOUR_REPO_NAME
+    cd BeamNG_sort
     ```
 
 2.  **Установите зависимости:**
-
     ```bash
     pip install -r requirements.txt
     ```
 
 3.  **Запустите приложение:**
-
     ```bash
     python main.py
     ```
@@ -175,26 +164,19 @@ PyQt6
 **Зависимости:**
 
 *   [PyQt6](https://www.riverbankcomputing.com/software/pyqt/intro)
-*   [dataclasses](https://docs.python.org/3/library/dataclasses.html) (Стандартный модуль в Python 3.7+)
-*   [typing](https://docs.python.org/3/library/typing.html) (Стандартный модуль в Python 3.5+)
-*   [zipfile](https://docs.python.org/3/library/zipfile.html) (Стандартная библиотека Python)
-*   [json](https://docs.python.org/3/library/json.html) (Стандартная библиотека Python)
-*   [os](https://docs.python.org/3/library/os.html) (Стандартная библиотека Python)
-*   [shutil](https://docs.python.org/3/library/shutil.html) (Стандартная библиотека Python)
-*   [logging](https://docs.python.org/3/library/logging.html) (Стандартная библиотека Python)
+*   [colorlog](https://pypi.org/project/colorlog/) (для цветного вывода в консоль)
+*   [packaging](https://pypi.org/project/packaging/) (для сравнения версий)
 
 **Планируемые функции:**
 
-*   **Пользовательские папки назначения:** Разрешить пользователям настраивать папки назначения для каждого типа мода.
-*   **Более надежная обработка ошибок:** Улучшить отчетность об ошибках и обработку поврежденных или неправильно сформированных архивов модов.
-*   **Аргументы командной строки:** Поддержка аргументов командной строки для параметров конфигурации, таких как пропуск отсортированных модов.
-*   **Улучшения пользовательского интерфейса:** Улучшения пользовательского интерфейса для повышения удобства использования и визуальной привлекательности.
-*   **Многоязычная поддержка:** Позволить пользователям выбирать языковые предпочтения.
-*   **Интеграция онлайн-базы данных:** Возможна интеграция с онлайн-базой данных модов для получения более подробной информации о моде.
+*   **Настройка папок в рантайме:** Позволить пользователям настраивать папки назначения непосредственно в приложении.
+*   **Аргументы командной строки:** Поддержка аргументов командной строки, например, для принудительного пропуска отсортированных модов.
+*   **Улучшения UI/UX:** Общие улучшения пользовательского интерфейса.
+*   **Многоязычная поддержка:** Добавление локализации для разных языков.
 
 **Вклад:**
 
-Приветствуются соучастники проекта! Если вы обнаружите ошибку, у вас есть запрос на добавление функции или вы хотите внести код, откройте проблему или отправьте запрос на включение на GitHub.
+Приветствуется вклад в проект! Если вы обнаружите ошибку, у вас есть запрос на добавление функции или вы хотите внести код, пожалуйста, откройте `issue` или отправьте `pull request` на GitHub.
 
 **Лицензия:**
 
@@ -202,6 +184,6 @@ PyQt6
 
 **Важные соображения:**
 
-*   **Резервное копирование:** Всегда делайте резервную копию папки с модами перед использованием этого или любого другого инструмента управления модами.
-*   **Недействительные моды:** Этот инструмент предназначен для помощи в сортировке действительных модов. Он может не справиться со всеми типами поврежденных или необычных архивов модов.
-*   **Файлы .mod_sorted:** НЕ редактируйте и НЕ удаляйте эти файлы вручную! Инструмент полагается на их присутствие и содержимое для правильной работы.
+*   **Резервное копирование:** **Всегда делайте резервную копию вашей папки с модами перед использованием этого или любого другого инструмента управления модами.**
+*   **Недействительные моды:** Этот инструмент предназначен для помощи в сортировке действительных модов. Хотя он пытается обрабатывать некорректно сформированные архивы, он может не справиться со всеми типами поврежденных файлов.
+*   **Файлы `.mod_sorted`:** НЕ редактируйте и НЕ удаляйте эти файлы вручную из архивов. Инструмент полагается на них для своей логики сортировки.

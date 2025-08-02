@@ -147,17 +147,17 @@ class MoveModHandler(EventHandler):
             logger.warning("No current file path.")
             return
 
-        dest_folder = QFileDialog.getExistingDirectory(self.main_window, "Выберите папку для перемещения")
+        dest_folder = QFileDialog.getExistingDirectory(self.main_window, "Select folder to move to")
         if not dest_folder:
             logger.info("Move mod operation cancelled by user.")
             return
 
         try:
             self.mod_manager.move_mod(current_file_path, dest_folder)
-            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {dest_folder}")
+            QMessageBox.information(self.main_window, "Success", f"File moved to {dest_folder}")
             self.main_window.load_current_mod()  # Refresh UI
         except Exception as e:
-            self.main_window.handle_error(e, "Ошибка при перемещении мода")
+            self.main_window.handle_error(e, "Error moving mod")
 
 class MoveModToFolderHandler(EventHandler):
     def __init__(self, main_window, mod_manager, folder_path):
@@ -175,7 +175,7 @@ class MoveModToFolderHandler(EventHandler):
         try:
             destination_path = os.path.join(self.main_window.source_folder, self.folder_path)
             self.mod_manager.move_mod(current_file_path, destination_path)
-            QMessageBox.information(self.main_window, "Успех", f"Файл перемещен в {destination_path}")
+            QMessageBox.information(self.main_window, "Success", f"File moved to {destination_path}")
             self.main_window.load_current_mod()
         except Exception as e:
-            self.main_window.handle_error(e, f"Ошибка при перемещении мода в {self.folder_path}")
+            self.main_window.handle_error(e, f"Error moving mod to {self.folder_path}")
