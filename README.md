@@ -1,3 +1,4 @@
+![BNGSorter_icon.ico](resources/BNGSorter_icon.ico)
 ## BeamNG Mod Sorter
 
 This application helps you sort your BeamNG.drive mods more efficiently. It analyzes `.zip` files, extracts key information, displays previews, and allows you to categorize and manage your mods.

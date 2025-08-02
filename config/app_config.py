@@ -1,4 +1,3 @@
-# mod_sorter/config/app_config.py
 from dataclasses import dataclass
 
 @dataclass
@@ -9,5 +8,4 @@ class AppConfig:
     IMAGE_DISPLAY_WIDTH = 600
     IMAGE_DISPLAY_HEIGHT = 400
     MARKER_EXTENSION = ".mod_sorted"
-    MOVE_FOLDERS_CONFIG = "config/move_folders.json"
     CACHE_FILE_PATH = 'mod_cache.json'

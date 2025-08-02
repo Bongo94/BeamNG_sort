@@ -139,21 +139,34 @@ class ModSorterApp(QMainWindow):
             return None
 
     def _load_move_folders_config(self):
-        """Load the move folders configuration from a JSON file."""
-        config_path = AppConfig.MOVE_FOLDERS_CONFIG
-        try:
-            with open(config_path, 'r', encoding='utf-8') as f:
-                config = json.load(f)
-            logger.info(f"Loaded move folders config from: {config_path}")
-            return config
-        except FileNotFoundError:
-            logger.warning(f"Config file not found: {config_path}. Using default config.")
-            return []
-        except json.JSONDecodeError as e:
-            logger.error(f"Error decoding JSON in {config_path}: {e}. Using default config.")
-            QMessageBox.critical(self, "Configuration Error", f"Error in configuration file {config_path}: {e}")
-            return []
-
+        """Returns a hardcoded list of dictionaries for the move buttons."""
+        logger.info("Loading hardcoded move folders configuration.")
+        return [
+            {
+                "name": "Move to Repo",
+                "path": "repo"
+            },
+            {
+                "name": "Move to Real Cars",
+                "path": "real_cars"
+            },
+            {
+                "name": "Move to Maps",
+                "path": "maps"
+            },
+            {
+                "name": "Move to Utils",
+                "path": "utils"
+            },
+            {
+                "name": "Move to Tuning",
+                "path": "tuning"
+            },
+            {
+                "name": "Move to Other",
+                "path": "other"
+            }
+        ]
     def _setup_ui(self):
         logger.debug("Setting up UI")
 
