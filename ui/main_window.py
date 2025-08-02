@@ -1,5 +1,6 @@
 import json
 import math
+import os
 import sys
 from datetime import datetime
 from typing import Optional
@@ -9,6 +10,7 @@ from PyQt6.QtGui import QPixmap, QShortcut, QKeySequence
 from PyQt6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QPushButton, QLabel, QFileDialog,
                              QMessageBox, QComboBox, QTextEdit, QTabWidget, QGroupBox, QLineEdit)
+from packaging.version import Version, InvalidVersion
 
 from config.app_config import AppConfig
 from core.mod_info import ModInfo, ModType
@@ -58,7 +60,8 @@ class ModSorterApp(QMainWindow):
         self._ask_skip_sorted()
         self._setup_ui()
         self._setup_shortcuts()
-        self.source_folder = self.select_source_folder()
+        # self.source_folder = self.select_source_folder()
+        self.source_folder = self._initialize_source_folder()
 
         if self.source_folder:
             self.mod_manager = ModManager(self.source_folder)
@@ -66,6 +69,74 @@ class ModSorterApp(QMainWindow):
         else:
             logger.info("No source folder selected, exiting.")
             sys.exit()
+
+    def _initialize_source_folder(self) -> Optional[str]:
+        """Tries to auto-detect the mods folder and asks the user, falling back to manual selection."""
+        detected_path = self._find_beamng_mods_folder()
+
+        if detected_path:
+            logger.info(f"Auto-detected BeamNG mods folder: {detected_path}")
+            reply = QMessageBox.question(
+                self,
+                    "Mods folder not found",
+                    f"The mods folder was automatically detected:\n\n"
+                    f"{detected_path}\n\n"
+                    f"Do you want to use it?",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.Yes
+            )
+
+            if reply == QMessageBox.StandardButton.Yes:
+                return detected_path
+
+        logger.info("Falling back to manual folder selection.")
+        return self.select_source_folder()
+
+    def _find_beamng_mods_folder(self) -> Optional[str]:
+        """
+        Scans for the latest BeamNG.drive version folder in AppData
+        and returns the path to the 'mods' subdirectory if it exists.
+        """
+        logger.debug("Attempting to auto-detect BeamNG mods folder.")
+        try:
+            base_path = os.path.join(os.path.expanduser('~'), 'AppData', 'Local', 'BeamNG.drive')
+
+            if not os.path.isdir(base_path):
+                logger.debug(f"BeamNG base path not found at: {base_path}")
+                return None
+
+            version_folders = []
+            for item in os.listdir(base_path):
+                item_path = os.path.join(base_path, item)
+                if os.path.isdir(item_path):
+                    try:
+                        Version(item)
+                        version_folders.append(item)
+                    except InvalidVersion:
+                        continue
+
+            if not version_folders:
+                logger.debug("No version-like folders found in BeamNG directory.")
+                return None
+
+            version_folders.sort(key=Version, reverse=True)
+            latest_version = version_folders[0]
+            logger.debug(f"Found latest version folder: {latest_version}")
+
+            mods_path = os.path.join(base_path, latest_version, 'mods')
+            if os.path.isdir(mods_path):
+                logger.info(f"Successfully found mods path: {mods_path}")
+                return mods_path
+            else:
+                logger.warning(f"Mods folder does not exist at the expected path: {mods_path}")
+                return None
+
+        except FileNotFoundError:
+            logger.info("BeamNG.drive directory not found. Cannot auto-detect.")
+            return None
+        except Exception as e:
+            logger.error(f"An unexpected error occurred during mods folder detection: {e}", exc_info=True)
+            return None
 
     def _load_move_folders_config(self):
         """Load the move folders configuration from a JSON file."""

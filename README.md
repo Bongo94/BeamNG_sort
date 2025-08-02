@@ -5,6 +5,7 @@ This application helps you sort your BeamNG.drive mods more efficiently. It anal
 **Key Features:**
 
 *   **Automated Mod Analysis:**  Identifies the type of mod (vehicle, map, or other) by analyzing the contents of `.zip` files, extracting information from `info.json` files within.
+*   **Automatic Folder Detection:** Automatically finds your BeamNG.drive `mods` folder on startup.
 *   **Preview Display:** Shows images and previews from inside the mod archives, helping you quickly identify the mod.
 *   **Categorization:**  Allows you to easily move mods into type-specific folders (Vehicles, Maps, etc.).
 *   **Sorting Markers:**  Marks sorted mods with a `.mod_sorted` file *inside* the zip archive, making it easy to skip already-processed files.
@@ -112,6 +113,7 @@ PyQt6
 **Основные возможности:**
 
 *   **Автоматический анализ модов:** Определяет тип мода (транспортное средство, карта или другое) путем анализа содержимого `.zip` файлов, извлекая информацию из `info.json` файлов внутри.
+*   **Автоматическое определение папки:** При запуске приложение автоматически находит вашу папку `mods` для BeamNG.drive.
 *   **Отображение превью:** Показывает изображения и превью изнутри архивов модов, помогая вам быстро идентифицировать мод.
 *   **Категоризация:** Позволяет вам легко перемещать моды в папки, соответствующие их типу (Vehicles, Maps и т.д.).
 *   **Маркеры сортировки:** Отмечает отсортированные моды файлом `.mod_sorted` *внутри* zip-архива, что позволяет легко пропускать уже обработанные файлы.
