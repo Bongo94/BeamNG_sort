@@ -1,13 +1,11 @@
-# core/mod_cache.py
 import json
 import os
 import time
 from typing import Dict, Optional, Any
 from config.app_config import AppConfig
 from utils.logger import logger
-from core.mod_info import ModType # Import ModType if needed for cache structure
 
-CACHE_VERSION = 1 # Increment if cache structure changes significantly
+CACHE_VERSION = 1
 
 class ModCache:
     """Manages an external cache for mod analysis results."""
@@ -17,20 +15,18 @@ class ModCache:
         self.cache_data: Dict[str, Dict[str, Any]] = self._load_cache()
         logger.info(f"ModCache initialized. Loaded {len(self.cache_data)} entries from {self.cache_file_path}")
 
-    def _load_cache(self) -> Dict[str, Dict[str, Any]]:
+    def _load_cache(self) -> dict[str, int] | Any:
         """Loads cache data from the JSON file."""
         if not os.path.exists(self.cache_file_path):
             logger.info(f"Cache file not found at {self.cache_file_path}. Starting with empty cache.")
-            return {"_version": CACHE_VERSION} # Initialize with version
+            return {"_version": CACHE_VERSION}
 
         try:
             with open(self.cache_file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                # Basic version check (optional but recommended)
                 if data.get("_version") != CACHE_VERSION:
                     logger.warning(f"Cache file version mismatch (expected {CACHE_VERSION}, found {data.get('_version')}). Discarding old cache.")
                     return {"_version": CACHE_VERSION}
-                # Remove version info before returning data part
                 if "_version" in data:
                     del data["_version"]
                 return data
@@ -44,7 +40,6 @@ class ModCache:
     def _save_cache(self):
         """Saves the current cache data to the JSON file."""
         try:
-            # Add version info before saving
             save_data = {"_version": CACHE_VERSION, **self.cache_data}
             with open(self.cache_file_path, 'w', encoding='utf-8') as f:
                 json.dump(save_data, f, indent=2, ensure_ascii=False)
@@ -67,18 +62,17 @@ class ModCache:
             cached_entry = self.cache_data[filename]
             cached_mod_time = cached_entry.get('mod_time')
 
-            # Check if modification times match (handle None cases)
-            if file_mod_time is not None and cached_mod_time is not None and abs(file_mod_time - cached_mod_time) < 1e-6: # Compare floats carefully
+            if file_mod_time is not None and cached_mod_time is not None and abs(file_mod_time - cached_mod_time) < 1e-6:
                 logger.debug(f"Cache hit for '{filename}'.")
                 return cached_entry
             elif file_mod_time is None or cached_mod_time is None:
                  logger.debug(f"Cache hit for '{filename}', but modification time missing. Treating as valid (re-analysis might be needed if file changed).")
-                 return cached_entry # Or return None if you want to force re-analysis when times are missing
+                 return cached_entry
             else:
                 logger.info(f"Cache outdated for '{filename}' (mod time mismatch: file={file_mod_time}, cache={cached_mod_time}). Needs re-analysis.")
-                return None # Outdated
+                return None
         logger.debug(f"Cache miss for '{filename}'.")
-        return None # Not in cache
+        return None
 
     def update_cache(self, filename: str, file_mod_time: Optional[float], mod_info_dict: Dict[str, Any]):
         """
@@ -91,9 +85,9 @@ class ModCache:
                            (e.g., {'name': ..., 'author': ..., 'type': ..., 'analyzed_time': ...}).
         """
         logger.debug(f"Updating cache for '{filename}'.")
-        entry = mod_info_dict.copy() # Avoid modifying the original dict
+        entry = mod_info_dict.copy()
         entry['mod_time'] = file_mod_time
-        entry['analyzed_time'] = time.time() # Record when analysis was done
+        entry['analyzed_time'] = time.time()
         self.cache_data[filename] = entry
         self._save_cache()
 

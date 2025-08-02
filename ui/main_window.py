@@ -1,4 +1,3 @@
-# mod_sorter/ui/main_window.py
 import json
 import math
 import sys
@@ -16,11 +15,10 @@ from core.mod_info import ModInfo, ModType
 from core.mod_manager import ModManager, check_sorted_marker
 from ui.event_handlers import PreviousModHandler, SkipModHandler, NextModHandler, DeleteModHandler, MoveModHandler, \
     MoveModToFolderHandler
-# from ui.event_handlers import NextModHandler, DeleteModHandler, MoveModHandler, MoveModToFolderHandler
 from utils.logger import logger
 
 
-# --- Хелперы форматирования (можно вынести в utils, если хочется) ---
+# Format
 def format_filesize(size_bytes: Optional[int]) -> str:
     """Converts bytes to a human-readable string (KB, MB, GB)."""
     if size_bytes is None or size_bytes < 0:
@@ -39,12 +37,10 @@ def format_timestamp(timestamp: Optional[float]) -> str:
         return "N/A"
     try:
         dt_object = datetime.fromtimestamp(timestamp)
-        # Формат можно настроить: '%Y-%m-%d %H:%M:%S' или '%d %b %Y, %H:%M' и т.д.
         return dt_object.strftime('%Y-%m-%d %H:%M')
     except Exception:
         logger.warning(f"Could not format timestamp: {timestamp}")
         return "Invalid Date"
-# --- Конец хелперов ---
 
 
 class ModSorterApp(QMainWindow):
@@ -138,12 +134,12 @@ class ModSorterApp(QMainWindow):
         self.file_name_label.setStyleSheet("font-weight: bold;")
         self.file_name_label.setWordWrap(True) # Перенос длинных имен
 
-        # --- НОВОЕ: Лейбл для статистики ---
+        # Statistics
         self.file_stats_label = QLabel("Size: N/A | Modified: N/A")
         self.file_stats_label.setStyleSheet("font-size: 9pt; color: gray;")
 
         file_info_layout.addWidget(self.file_name_label)
-        file_info_layout.addWidget(self.file_stats_label) # Добавляем в layout
+        file_info_layout.addWidget(self.file_stats_label)
         self.main_layout.addWidget(self.file_info_group)
 
     def _create_tab_widget(self):
@@ -215,23 +211,23 @@ class ModSorterApp(QMainWindow):
         self.actions_group = QGroupBox("Actions")
         button_layout = QHBoxLayout(self.actions_group)
 
-        # --- НОВЫЕ КНОПКИ ---
+
         self.prev_button = QPushButton("← Previous (Ctrl+B)")
         self.skip_button = QPushButton("Skip (Ctrl+S)")
-        # ---
 
-        self.keep_button = QPushButton("Keep && Next (Ctrl+K)")  # Чуть изменил текст для ясности
+
+        self.keep_button = QPushButton("Keep && Next (Ctrl+K)")
         self.delete_button = QPushButton("Delete (Ctrl+D)")
         self.move_button = QPushButton("Move (Ctrl+M)")
 
-        # Стили (можно настроить)
-        self.prev_button.setStyleSheet("background-color: #cccccc;")  # Серый
-        self.skip_button.setStyleSheet("background-color: #ffc107;")  # Желтый/оранжевый
-        self.keep_button.setStyleSheet("background-color: #4CAF50; color: white;")  # Зеленый
-        self.delete_button.setStyleSheet("background-color: #f44336; color: white;")  # Красный
-        self.move_button.setStyleSheet("background-color: #2196F3; color: white;")  # Синий
+        # Styles
+        self.prev_button.setStyleSheet("background-color: #cccccc;")
+        self.skip_button.setStyleSheet("background-color: #ffc107;")
+        self.keep_button.setStyleSheet("background-color: #4CAF50; color: white;")
+        self.delete_button.setStyleSheet("background-color: #f44336; color: white;")
+        self.move_button.setStyleSheet("background-color: #2196F3; color: white;")
 
-        # Добавляем кнопки в layout
+
         button_layout.addWidget(self.prev_button)
         button_layout.addWidget(self.skip_button)
         button_layout.addWidget(self.keep_button)
@@ -239,8 +235,7 @@ class ModSorterApp(QMainWindow):
         button_layout.addWidget(self.move_button)
 
         for button in [self.prev_button, self.skip_button, self.keep_button, self.delete_button, self.move_button]:
-            button.setMinimumWidth(120)  # Немного уменьшил мин. ширину
-            # button_layout.addWidget(button) # Уже добавили выше
+            button.setMinimumWidth(120)
 
         # Подключаем сигналы к новым слотам
         self.prev_button.clicked.connect(self.prev_mod_clicked)
@@ -252,14 +247,13 @@ class ModSorterApp(QMainWindow):
 
         self.main_layout.addWidget(self.actions_group)
 
-        # Обновляем Tab order
+        # Tab order
         QWidget.setTabOrder(self.search_input, self.mod_type_filter)
         QWidget.setTabOrder(self.mod_type_filter, self.prev_button)
         QWidget.setTabOrder(self.prev_button, self.skip_button)
         QWidget.setTabOrder(self.skip_button, self.keep_button)
         QWidget.setTabOrder(self.keep_button, self.delete_button)
         QWidget.setTabOrder(self.delete_button, self.move_button)
-        # Добавить сюда кнопки из dynamic_buttons_layout, если они есть и нужны в порядке обхода
 
     def _create_dynamic_buttons(self):
         self.dynamic_buttons_group = QGroupBox("Move to...")
@@ -305,15 +299,13 @@ class ModSorterApp(QMainWindow):
 
     def _setup_shortcuts(self):
         logger.debug("Setting up keyboard shortcuts")
-        # --- НОВЫЕ ШОРТКАТЫ ---
-        QShortcut(QKeySequence("Ctrl+B"), self, self.prev_button.click)  # Back
-        QShortcut(QKeySequence("Ctrl+S"), self, self.skip_button.click)  # Skip
-        # ---
-        QShortcut(QKeySequence("Ctrl+K"), self, self.keep_button.click)  # Keep
-        QShortcut(QKeySequence("Ctrl+D"), self, self.delete_button.click)  # Delete
-        QShortcut(QKeySequence("Ctrl+M"), self, self.move_button.click)  # Move
-        QShortcut(QKeySequence(Qt.Key.Key_Left), self, self.show_prev_image)  # Используем Qt.Key
-        QShortcut(QKeySequence(Qt.Key.Key_Right), self, self.show_next_image)  # Используем Qt.Key
+        QShortcut(QKeySequence("Ctrl+B"), self, self.prev_button.click)
+        QShortcut(QKeySequence("Ctrl+S"), self, self.skip_button.click)
+        QShortcut(QKeySequence("Ctrl+K"), self, self.keep_button.click)
+        QShortcut(QKeySequence("Ctrl+D"), self, self.delete_button.click)
+        QShortcut(QKeySequence("Ctrl+M"), self, self.move_button.click)
+        QShortcut(QKeySequence(Qt.Key.Key_Left), self, self.show_prev_image)
+        QShortcut(QKeySequence(Qt.Key.Key_Right), self, self.show_next_image)
         logger.info("Keyboard shortcuts setup complete")
 
     def handle_error(self, error: Exception, title: str = "Error"):
@@ -420,11 +412,11 @@ class ModSorterApp(QMainWindow):
             info = mod_info.additional_info
             roads = info.get('roads', [])
             if not isinstance(roads, list):
-                roads = []  # Treat as empty list if not a list
+                roads = []
 
             suitable_for = info.get('suitable_for', [])
             if not isinstance(suitable_for, list):
-                suitable_for = []  # Treat as empty list if not a list
+                suitable_for = []
 
             formatted_info = (
                 f"Spawn Points: {len(info.get('spawn_points', []))}\n"
@@ -459,7 +451,6 @@ class ModSorterApp(QMainWindow):
             logger.warning("No current zip file path, cannot filter.")
             return
 
-        # Analise current file path
         current_mod = self.mod_manager.get_current_mod_info()
         if not current_mod:
             logger.warning("No current mod info, cannot filter.")
@@ -495,75 +486,69 @@ class ModSorterApp(QMainWindow):
         return source_folder
 
     def load_current_mod(self):
-        logger.debug("--- Entering load_current_mod ---")  # <<< ADDED
+        logger.debug("--- Entering load_current_mod ---")
         if not self.mod_manager:
             logger.warning("ModManager not initialized, cannot load mod.")
             self.clear_ui()
             self.statusBar().showMessage("Error: Mod manager not ready.")
-            logger.debug("--- Exiting load_current_mod (no mod_manager) ---")  # <<< ADDED
+            logger.debug("--- Exiting load_current_mod (no mod_manager) ---")
             return
 
         zip_files_count = self.mod_manager.get_zip_files_count()
         current_index = self.mod_manager.get_current_index()
-        logger.debug(f"Zip count: {zip_files_count}, Current index: {current_index}")  # <<< ADDED
+        logger.debug(f"Zip count: {zip_files_count}, Current index: {current_index}")
 
-        # Проверка, есть ли вообще файлы
         if zip_files_count == 0:
             logger.info("No zip files found in the source folder.")
             self.clear_ui()
             self.counter_label.setText("Mod 0 of 0")
             self.statusBar().showMessage("No mods found in the selected folder.")
-            # Деактивируем кнопки действий
-            # ... (button disabling code) ...
-            logger.debug("--- Exiting load_current_mod (no zip files) ---")  # <<< ADDED
+            logger.debug("--- Exiting load_current_mod (no zip files) ---")
             return
         else:
-            # Активируем кнопки, если были деактивированы
-            # ... (button enabling code) ...
-            pass  # Pass added for structure
+            pass
 
-        # Индекс может быть равен zip_files_count ...
         if current_index >= zip_files_count:
             if zip_files_count > 0:
                 logger.warning(
                     f"Current index {current_index} is out of bounds (0-{zip_files_count - 1}). Resetting to last.")
                 self.mod_manager.set_current_index(zip_files_count - 1)
                 current_index = self.mod_manager.get_current_index()
-                logger.debug(f"Index reset to {current_index}")  # <<< ADDED
+                logger.debug(f"Index reset to {current_index}")
             else:
                 QMessageBox.information(self, "Complete", "All mods have been processed!")
                 logger.info("All files processed.")
                 self.clear_ui()
                 self.counter_label.setText(f"Mod {current_index} of {zip_files_count}")
                 self.statusBar().showMessage("All mods processed!")
-                logger.debug("--- Exiting load_current_mod (all processed) ---")  # <<< ADDED
+                logger.debug("--- Exiting load_current_mod (all processed) ---")
                 return
 
-        logger.debug("Getting current file path and stats...")  # <<< ADDED
+        logger.debug("Getting current file path and stats...")
         current_file_path = self.mod_manager.get_current_zip_file_path()
         file_name = self.mod_manager.get_current_zip_file_name()
         file_stats = self.mod_manager.get_current_file_stats()
-        logger.debug(f"File path: {current_file_path}")  # <<< ADDED
+        logger.debug(f"File path: {current_file_path}")
 
         if not current_file_path or not file_name:
             logger.error("Failed to get current file path or name even though index seems valid.")
             self.clear_ui()
             self.statusBar().showMessage("Error loading mod data.")
             if self.mod_manager:
-                logger.debug("Refreshing mod manager list due to inconsistent state.")  # <<< ADDED
+                logger.debug("Refreshing mod manager list due to inconsistent state.")
                 self.mod_manager.refresh_zip_list()
-            logger.debug("--- Exiting load_current_mod (failed get path/name) ---")  # <<< ADDED
+            logger.debug("--- Exiting load_current_mod (failed get path/name) ---")
             return
 
-        logger.debug("Checking if mod is sorted...")  # <<< ADDED
+        logger.debug("Checking if mod is sorted...")
         is_sorted = check_sorted_marker(current_file_path)
-        logger.debug(f"Is sorted: {is_sorted}, Skip sorted setting: {self.skip_sorted}")  # <<< ADDED
+        logger.debug(f"Is sorted: {is_sorted}, Skip sorted setting: {self.skip_sorted}")
 
         if is_sorted and self.skip_sorted:
             logger.info(f"Skipping already sorted mod: {file_name}")
-            logger.debug("Incrementing index to skip...")  # <<< ADDED
+            logger.debug("Incrementing index to skip...")
             if self.mod_manager.increment_index():
-                logger.debug("Index incremented, reloading...")  # <<< ADDED
+                logger.debug("Index incremented, reloading...")
                 self.load_current_mod()
             else:
                 QMessageBox.information(self, "Complete", "All remaining mods were already sorted!")
@@ -571,29 +556,29 @@ class ModSorterApp(QMainWindow):
                 self.clear_ui()
                 self.counter_label.setText(f"Mod {current_index + 1} of {zip_files_count}")
                 self.statusBar().showMessage("All mods processed or skipped!")
-            logger.debug("--- Exiting load_current_mod (skipped sorted) ---")  # <<< ADDED
+            logger.debug("--- Exiting load_current_mod (skipped sorted) ---")
             return
 
-        logger.debug("Getting current mod info via ModManager...")  # <<< ADDED
+        logger.debug("Getting current mod info via ModManager...")
         self.current_mod_info = self.mod_manager.get_current_mod_info()
         if not self.current_mod_info:
             logger.error(f"Could not load mod info for {file_name} (ModManager returned None).")
             self.clear_ui()
             self.statusBar().showMessage(f"Error: Could not load data for {file_name}.")
-            logger.debug("--- Exiting load_current_mod (ModManager returned None info) ---")  # <<< ADDED
+            logger.debug("--- Exiting load_current_mod (ModManager returned None info) ---")
             return
         logger.debug(
-            f"Mod info obtained: Name='{self.current_mod_info.name}', Type='{self.current_mod_info.type}'")  # <<< ADDED
+            f"Mod info obtained: Name='{self.current_mod_info.name}', Type='{self.current_mod_info.type}'")
 
-        # Обновляем UI
-        logger.debug("--- Starting UI Update ---")  # <<< ADDED
+        # Update UI
+        logger.debug("--- Starting UI Update ---")
 
         file_label_text = f"File: {file_name}"
         if is_sorted:
             file_label_text = f"File: <span style='color: green;'>{file_name} (Sorted)</span>"
-        logger.debug(f"Setting file name label: '{file_label_text[:100]}...'")  # Log truncated name
+        logger.debug(f"Setting file name label: '{file_label_text[:100]}...'")
         self.file_name_label.setText(file_label_text)
-        logger.debug("File name label set.")  # <<< ADDED
+        logger.debug("File name label set.")
 
         if file_stats:
             size_str = format_filesize(file_stats.get('size'))
@@ -601,144 +586,76 @@ class ModSorterApp(QMainWindow):
             stats_text = f"Size: {size_str} | Modified: {mod_str}"
         else:
             stats_text = "Size: N/A | Modified: N/A"
-        logger.debug(f"Setting file stats label: '{stats_text}'")  # <<< ADDED
+        logger.debug(f"Setting file stats label: '{stats_text}'")
         self.file_stats_label.setText(stats_text)
-        logger.debug("File stats label set.")  # <<< ADDED
+        logger.debug("File stats label set.")
 
         name_text = f"Name: {self.current_mod_info.name}"
         author_text = f"Author: {self.current_mod_info.author}"
         type_text = f"Type: {self.current_mod_info.type.value}"
-        logger.debug(f"Setting name label: '{name_text}'")  # <<< ADDED
+        logger.debug(f"Setting name label: '{name_text}'")
         self.name_label.setText(name_text)
-        logger.debug("Name label set.")  # <<< ADDED
-        logger.debug(f"Setting author label: '{author_text}'")  # <<< ADDED
+        logger.debug("Name label set.")
+        logger.debug(f"Setting author label: '{author_text}'")
         self.author_label.setText(author_text)
-        logger.debug("Author label set.")  # <<< ADDED
-        logger.debug(f"Setting type label: '{type_text}'")  # <<< ADDED
+        logger.debug("Author label set.")
+        logger.debug(f"Setting type label: '{type_text}'")
         self.type_label.setText(type_text)
-        logger.debug("Type label set.")  # <<< ADDED
+        logger.debug("Type label set.")
 
         desc_content = self.current_mod_info.description
-        logger.debug(f"Setting description text (length: {len(desc_content)})...")  # <<< ADDED
+        logger.debug(f"Setting description text (length: {len(desc_content)})...")
         self.desc_text.setText(desc_content)
-        logger.debug("Description text set.")  # <<< ADDED
+        logger.debug("Description text set.")
 
-        logger.debug("Formatting additional info...")  # <<< ADDED
+        logger.debug("Formatting additional info...")
         additional_content = self.format_additional_info(self.current_mod_info)
-        logger.debug(f"Setting additional info text (length: {len(additional_content)})...")  # <<< ADDED
+        logger.debug(f"Setting additional info text (length: {len(additional_content)})...")
         self.additional_info_text.setText(additional_content)
-        logger.debug("Additional info text set.")  # <<< ADDED
+        logger.debug("Additional info text set.")
 
         self.current_image_index = 0
-        logger.debug("Calling update_image_display...")  # <<< ADDED
+        logger.debug("Calling update_image_display...")
         self.update_image_display()
-        logger.debug("Returned from update_image_display.")  # <<< ADDED
+        logger.debug("Returned from update_image_display.")
 
         counter_text = f"Mod {current_index + 1} of {zip_files_count}"
-        logger.debug(f"Setting counter label: '{counter_text}'")  # <<< ADDED
+        logger.debug(f"Setting counter label: '{counter_text}'")
         self.counter_label.setText(counter_text)
-        logger.debug("Counter label set.")  # <<< ADDED
+        logger.debug("Counter label set.")
 
-        logger.debug("Setting status bar message: 'Ready'")  # <<< ADDED
+        logger.debug("Setting status bar message: 'Ready'")
         self.statusBar().showMessage("Ready")
-        logger.debug("Status bar message set.")  # <<< ADDED
+        logger.debug("Status bar message set.")
 
-        logger.debug("Updating button enabled states...")  # <<< ADDED
+        logger.debug("Updating button enabled states...")
         self.prev_button.setEnabled(current_index > 0)
-        # self.skip_button.setEnabled(current_index < zip_files_count - 1) # Keep enabled
-        # self.keep_button.setEnabled(current_index < zip_files_count - 1) # Keep enabled
-        logger.debug("Button states updated.")  # <<< ADDED
+        # self.skip_button.setEnabled(current_index < zip_files_count - 1)
+        # self.keep_button.setEnabled(current_index < zip_files_count - 1)
+        logger.debug("Button states updated.")
 
-        logger.debug("--- Finished UI Update ---")  # <<< ADDED
-        logger.debug("--- Exiting load_current_mod (normal flow) ---")  # <<< ADDED
-
-    def update_image_display(self):
-        logger.debug("--- Entering update_image_display ---")  # <<< ADDED
-        if not self.current_mod_info or not self.current_mod_info.preview_images:
-            logger.debug("No mod info or preview images found.")  # <<< ADDED
-            self.image_label.setText("No images found")
-            self.image_counter_label.setText("0/0")
-            self.image_name_label.setText("")
-            logger.debug("Cleared image display fields.")  # <<< ADDED
-            logger.debug("--- Exiting update_image_display (no images) ---")  # <<< ADDED
-            return
-
-        try:
-            logger.debug(f"Attempting to display image index: {self.current_image_index}")  # <<< ADDED
-            image_name, image_data = self.current_mod_info.preview_images[self.current_image_index]
-            logger.debug(f"Got image: Name='{image_name}', Size={len(image_data)} bytes")  # <<< ADDED
-
-            logger.debug("Creating QPixmap...")  # <<< ADDED
-            pixmap = QPixmap()
-            logger.debug("QPixmap created.")  # <<< ADDED
-
-            logger.debug(f"Calling pixmap.loadFromData for '{image_name}'...")  # <<< ADDED
-            load_success = pixmap.loadFromData(image_data)
-            logger.debug(f"pixmap.loadFromData returned: {load_success}")  # <<< ADDED
-
-            if not load_success:
-                # Raise error specifically if loading failed
-                raise RuntimeError(f"QPixmap.loadFromData failed for image: {image_name}")
-
-            logger.debug("Scaling pixmap...")  # <<< ADDED
-            scaled_pixmap = pixmap.scaled(
-                AppConfig.IMAGE_DISPLAY_WIDTH,
-                AppConfig.IMAGE_DISPLAY_HEIGHT,
-                Qt.AspectRatioMode.KeepAspectRatio
-            )
-            logger.debug("Pixmap scaled.")  # <<< ADDED
-
-            logger.debug("Setting pixmap on label...")  # <<< ADDED
-            self.image_label.setPixmap(scaled_pixmap)
-            logger.debug("Pixmap set on label.")  # <<< ADDED
-
-            counter_text = f"{self.current_image_index + 1}/{len(self.current_mod_info.preview_images)}"
-            name_text = f"File: {image_name}"
-            logger.debug(f"Setting image counter label: '{counter_text}'")  # <<< ADDED
-            self.image_counter_label.setText(counter_text)
-            logger.debug("Image counter label set.")  # <<< ADDED
-            logger.debug(f"Setting image name label: '{name_text}'")  # <<< ADDED
-            self.image_name_label.setText(name_text)
-            logger.debug("Image name label set.")  # <<< ADDED
-            logger.debug(f"Successfully displayed image: {image_name}")
-
-        except IndexError:
-            logger.error(
-                f"Image index {self.current_image_index} out of range for list size {len(self.current_mod_info.preview_images)}",
-                exc_info=True)  # Log traceback
-            self.image_label.setText("Error: Image index out of bounds")
-            self.image_counter_label.setText("Error")
-            self.image_name_label.setText("")
-        except Exception as e:
-            # Log the error *before* calling handle_error, in case handle_error itself fails
-            logger.error(f"Exception during image display: {e}", exc_info=True)  # <<< ADDED - Log traceback
-            self.handle_error(e, f"Image display error for index {self.current_image_index}")
-            # Clear potentially problematic display elements
-            self.image_label.setText(f"Error loading image:\n{e}")
-            self.image_counter_label.setText("Error")
-            self.image_name_label.setText(f"Error: {image_name}" if 'image_name' in locals() else "Error")
-
-        logger.debug("--- Exiting update_image_display ---")  # <<< ADDED
+        logger.debug("--- Finished UI Update ---")
+        logger.debug("--- Exiting load_current_mod (normal flow) ---")
 
     def clear_ui(self):
         """Clears all UI elements related to mod info."""
         logger.debug("Clearing UI fields.")
         self.file_name_label.setText("File: N/A")
-        self.file_stats_label.setText("Size: N/A | Modified: N/A")  # Очищаем статистику
+        self.file_stats_label.setText("Size: N/A | Modified: N/A")
         self.name_label.setText("Name: N/A")
         self.author_label.setText("Author: N/A")
         self.type_label.setText("Type: N/A")
         self.desc_text.clear()
         self.additional_info_text.clear()
         self.image_label.clear()
-        self.image_label.setText("No image")  # Пояснение
+        self.image_label.setText("No image")
         self.image_counter_label.setText("0/0")
         self.image_name_label.clear()
-        self.current_mod_info = None  # Сбрасываем текущую информацию
-        # self.counter_label - не очищаем, его обновит load_current_mod
-        self.search_input.clear()  # Очищаем поиск при полном сбросе
+        self.current_mod_info = None
+        # self.counter_label
+        self.search_input.clear()
 
-    # --- НОВЫЕ Слоты для кнопок ---
+
     def prev_mod_clicked(self):
         handler = PreviousModHandler(self, self.mod_manager)
         handler.handle()
@@ -746,7 +663,6 @@ class ModSorterApp(QMainWindow):
     def skip_mod_clicked(self):
         handler = SkipModHandler(self, self.mod_manager)
         handler.handle()
-    # ---
 
     def next_mod_clicked(self): # Keep button
         handler = NextModHandler(self, self.mod_manager, self.current_mod_info)
@@ -757,11 +673,9 @@ class ModSorterApp(QMainWindow):
         handler.handle()
 
     def move_mod_clicked(self):
-        # Передаем current_mod_info, т.к. MoveModHandler его использует (хотя мог бы и сам получить)
         handler = MoveModHandler(self, self.mod_manager, self.current_mod_info)
         handler.handle()
 
     def move_mod_to_folder_clicked(self, folder_path):
-        # MoveModToFolderHandler не использует current_mod_info напрямую
         handler = MoveModToFolderHandler(self, self.mod_manager, folder_path)
         handler.handle()

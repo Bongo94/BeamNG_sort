@@ -1,11 +1,10 @@
-# mod_analyzer.py
 import zipfile
 import json
 import os
 from typing import Optional, List, Dict
-from core.mod_info import ModInfo, ModType  # Импорт из mod_info.py
-from utils.logger import logger  # Импортируем логгер
-import re  # Import the regular expression module
+from core.mod_info import ModInfo, ModType
+from utils.logger import logger
+import re
 
 class ModAnalyzer:
     @staticmethod
@@ -34,7 +33,6 @@ class ModAnalyzer:
             return ModAnalyzer._create_fallback_mod_info(zipfile.ZipFile(zip_path, 'r'), "", ModType.OTHER, f"Invalid zip file: {e}")
         except Exception as e:
             logger.exception(f"Error analyzing zip file: {zip_path}")
-            # If the zip file is corrupted, we can't even get the file list, so pass an empty string as a fallback.
             return ModAnalyzer._create_fallback_mod_info(zipfile.ZipFile(zip_path, 'r'), "", ModType.OTHER, str(e))
 
     @staticmethod
@@ -51,8 +49,7 @@ class ModAnalyzer:
 
         try:
             with zf.open(info_file) as f:
-                file_content = f.read().decode('utf-8', 'ignore')  # Read as string and handle encoding issues
-            # Extract relevant info using regex (safer than direct JSON parsing)
+                file_content = f.read().decode('utf-8', 'ignore')
             name = ModAnalyzer._extract_value_from_json_string(file_content, 'Name')
             author = ModAnalyzer._extract_value_from_json_string(file_content, 'Author')
             country = ModAnalyzer._extract_value_from_json_string(file_content, 'Country')
@@ -76,19 +73,16 @@ class ModAnalyzer:
             logger.exception(f"Error in _check_vehicle_mod")
             return ModAnalyzer._create_fallback_mod_info(zf, info_file, ModType.VEHICLE, str(e))
 
-        # Get all preview images and configurations
         preview_images = []
         base_dir = os.path.dirname(info_file)
         logger.debug(f"Base directory: {base_dir}")
 
-        # Find all .pc files and corresponding images
         pc_files = [f for f in file_list if f.startswith(base_dir) and f.endswith('.pc')]
         logger.debug(f"PC files: {pc_files}")
 
         for pc_file in pc_files:
             config_name = os.path.splitext(os.path.basename(pc_file))[0]
-            # Look for matching image
-            img_base = os.path.join(base_dir, config_name).replace('\\', '/')  # Normalize path to forward slashes
+            img_base = os.path.join(base_dir, config_name).replace('\\', '/')
             logger.debug(f"Image base: {img_base}")
             for ext in ['.png', '.jpg', '.jpeg']:
                 img_path = img_base + ext
@@ -98,14 +92,13 @@ class ModAnalyzer:
                             data = img.read()
                             logger.debug(f"Found image {img_path} with {len(data)} bytes")
                             preview_images.append((config_name, data))
-                            break  # Found the image, skip other extensions
+                            break
                     except Exception as e:
                         logger.warning(f"Could not load image {img_path}: {e}")
 
 
-        # Add default image if exists
         for default_name in ['default.png', 'default.jpg']:
-            default_path = os.path.join(base_dir, default_name).replace('\\', '/')  # Normalize path to forward slashes
+            default_path = os.path.join(base_dir, default_name).replace('\\', '/')
             if default_path in file_list:
                 try:
                     with zf.open(default_path) as img:
@@ -184,7 +177,7 @@ class ModAnalyzer:
         desc_parts = []
 
         def add_if_present(label: str, value: str):
-            if value:  # Check if value is not None or empty
+            if value:
                 desc_parts.append(f"{label}: {value}")
             else:
                 desc_parts.append(f"{label}: N/A")
@@ -198,7 +191,7 @@ class ModAnalyzer:
 
         engine_details = []
         def add_if_present_local(label, value):
-             if value:  # Check if value is not None or empty
+             if value:
                 engine_details.append(f"{label}: {value}")
 
         if engine_type or engine_configuration or engine_displacement or engine_power:  # Check if any engine detail is present
@@ -214,7 +207,7 @@ class ModAnalyzer:
 
         trans_details = []
         def add_if_present_local(label, value):
-             if value:  # Check if value is not None or empty
+             if value:
                 trans_details.append(f"{label}: {value}")
         if transmission_type or transmission_gears:
             desc_parts.append("\nTransmission:")
@@ -278,7 +271,7 @@ class ModAnalyzer:
 
         try:
             with zf.open(info_file) as f:
-                file_content = f.read().decode('utf-8', 'ignore')  # Read as string and handle encoding issues
+                file_content = f.read().decode('utf-8', 'ignore')
 
             # Extract relevant info using regex
             title = ModAnalyzer._extract_value_from_json_string(file_content, 'title')
@@ -288,25 +281,20 @@ class ModAnalyzer:
             roads_str = ModAnalyzer._extract_value_from_json_string(file_content, 'roads')
             suitablefor_str = ModAnalyzer._extract_value_from_json_string(file_content, 'suitablefor')
 
-            # Convert roads and suitablefor strings to lists if needed
             roads = [s.strip() for s in roads_str.split(',')] if roads_str else []
             suitablefor = [s.strip() for s in suitablefor_str.split(',')] if suitablefor_str else []
 
             size_x = ModAnalyzer._extract_value_from_json_string(file_content, '0', section='size')
             size_y = ModAnalyzer._extract_value_from_json_string(file_content, '1', section='size')
 
-            # Convert to strings, defaulting to "N/A" if None
             size_x = size_x if size_x else "N/A"
             size_y = size_y if size_y else "N/A"
 
             size = [size_x, size_y]
-            # Extract preview image filenames
             previews_str = ModAnalyzer._extract_value_from_json_string(file_content, 'previews')
 
-            # Handle the case where previews is a list
             previews = []
             if previews_str:
-                # Basic attempt to parse a JSON list, but not relying on full JSON parsing
                 previews = [s.strip().replace('"', '') for s in previews_str.strip('[]').split(',')]
 
 
@@ -317,7 +305,6 @@ class ModAnalyzer:
         preview_images = []
         base_dir = os.path.dirname(info_file)
 
-        # Get all preview images with their names
         if previews:
             for preview in previews:
                 preview_path = os.path.join(base_dir, preview)
@@ -344,7 +331,7 @@ class ModAnalyzer:
             additional_info={
                 'roads': roads,
                 'suitable_for': suitablefor,
-                'spawn_points': [],  # Placeholder
+                'spawn_points': [],
                 'raw_info': {'title': title, 'authors': authors, 'biome': biome, 'description': description,
                              'roads': roads, 'suitablefor': suitablefor}
             }
@@ -360,7 +347,7 @@ class ModAnalyzer:
         desc_parts = []
 
         def add_if_present(label: str, value: str):
-            if value:  # Check if value is not None or empty
+            if value:
                 desc_parts.append(f"{label}: {value}")
             else:
                 desc_parts.append(f"{label}: N/A")
@@ -437,20 +424,16 @@ class ModAnalyzer:
         """Creates a ModInfo object when JSON parsing fails."""
         logger.error(f"Creating fallback ModInfo for {zf.filename} due to: {error_message}")
 
-        # Attempt to get a mod name from the filename
         try:
             mod_name = os.path.basename(zf.filename).replace(".zip", "")  # Fallback name
         except:
             mod_name = "Unknown Mod"
 
-        # Try to get at least *some* preview images, even if JSON is broken
         preview_images = []
         base_dir = os.path.dirname(info_file_path) if info_file_path else ""
         file_list = zf.namelist()
 
-        # Look for common image extensions in a couple of likely locations
         for image_ext in ('.png', '.jpg', '.jpeg'):
-            # Check in the same directory as the (potentially broken) info file
             if info_file_path:
                 potential_image_path = os.path.join(base_dir, "preview" + image_ext).replace('\\', '/')
                 if potential_image_path in file_list:
@@ -459,11 +442,10 @@ class ModAnalyzer:
                             preview_images.append((os.path.basename(potential_image_path), img.read()))
                             logger.debug(f"Found fallback image {potential_image_path}")
                             if len(preview_images) >= 3:
-                                break  # Limit to 3 previews
+                                break
                     except Exception as e:
                         logger.warning(f"Could not load fallback image {potential_image_path}: {e}")
 
-            # If we still don't have images, try a more general search within the zip
             if len(preview_images) < 3:
                 for file_name in file_list:
                     if file_name.lower().endswith(image_ext):
@@ -480,10 +462,10 @@ class ModAnalyzer:
         mod_info = ModInfo(
             name=mod_name,
             author="Unknown (JSON Error)",
-            type=mod_type,  # Use provided type
+            type=mod_type,
             description=f"Error parsing info.json: {error_message}\n\nCould not load mod details.",
             preview_images=preview_images,
-            additional_info={}  # No additional info if JSON is broken
+            additional_info={}
         )
         logger.info(f"Created fallback mod info: {mod_info.name}".encode('utf-8').decode('ascii', errors='ignore'))
         return mod_info

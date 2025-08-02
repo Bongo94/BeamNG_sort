@@ -1,4 +1,3 @@
-# mod_sorter/core/mod_info.py
 from dataclasses import dataclass
 from typing import List, Dict, Tuple
 from enum import Enum
