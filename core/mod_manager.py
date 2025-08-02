@@ -111,24 +111,25 @@ class ModManager:
         logger.info(f"ModManager initialized, found {len(self.zip_files_info)} zip files.")
 
     def _load_zip_files_with_info(self) -> List[Dict[str, Any]]:
-        """Loads zip files and basic stats (name, path, size, modified time)."""
-        logger.debug(f"Loading zip files and info from: {self.source_folder}")
+        """Loads zip files and basic stats (name, path, size, modified time) recursively from the source folder."""
+        logger.debug(f"Recursively loading zip files and info from: {self.source_folder}")
         files_info = []
         try:
-            for filename in os.listdir(self.source_folder):
-                if filename.lower().endswith('.zip'):
-                    full_path = os.path.join(self.source_folder, filename)
-                    try:
-                        stats = os.stat(full_path)
-                        files_info.append({
-                            "name": filename,
-                            "path": full_path,
-                            "size": stats.st_size,
-                            "modified": stats.st_mtime
-                        })
-                    except OSError as e:
-                         logger.warning(f"Could not get stats for {full_path}: {e}")
-                         files_info.append({"name": filename, "path": full_path, "size": None, "modified": None})
+            for root, dirs, files in os.walk(self.source_folder):
+                for filename in files:
+                    if filename.lower().endswith('.zip'):
+                        full_path = os.path.join(root, filename)
+                        try:
+                            stats = os.stat(full_path)
+                            files_info.append({
+                                "name": filename,
+                                "path": full_path,
+                                "size": stats.st_size,
+                                "modified": stats.st_mtime
+                            })
+                        except OSError as e:
+                            logger.warning(f"Could not get stats for {full_path}: {e}")
+                            files_info.append({"name": filename, "path": full_path, "size": None, "modified": None})
 
         except FileNotFoundError:
             logger.error(f"Source folder not found during loading: {self.source_folder}")
@@ -138,6 +139,7 @@ class ModManager:
             return []
 
         logger.debug(f"Found {len(files_info)} zip files with info.")
+        # Сортируем файлы по имени для консистентного порядка
         files_info.sort(key=lambda x: x['name'].lower())
         return files_info
 
